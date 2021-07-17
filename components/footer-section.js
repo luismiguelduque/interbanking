@@ -1,4 +1,4 @@
-const HeaderSection = Vue.component('header-section', {
+const FooterSection = Vue.component('footer-section', {
     template: `
         <div>
             Footer section

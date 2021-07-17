@@ -1,4 +1,4 @@
-const HeaderSection = Vue.component('header-section', {
+const FaqSection = Vue.component('faq-section', {
     template: `
         <div>
             FAQ section
