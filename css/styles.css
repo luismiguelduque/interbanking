@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap');
 
 .sub-section {
 	margin-bottom: 60px;
@@ -57,13 +57,7 @@
 .is-ellipsis-2 {
 	-webkit-line-clamp: 2;
 }
-h1,
-h2,
-h3,
-h4 {
-	font-family: Montserrat, sans-serif;
-	font-weight: 600;
-}
+
 .title {
 	font-weight: 600;
 }
@@ -122,13 +116,49 @@ a {
 }
 
 
-/*------------*/
+/*------ CSS General------*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 57px;
+	line-height: 106.9%;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 106.9%;
+}
 
 .margin-center {
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.is-primary {
+	color: #5E26CE;
+}
+
+.is-primary-bg {
+	background: #5E26CE;
+}
 
 /*----- Card main -----*/
 
@@ -167,17 +197,17 @@ a {
 /* --------
 Faq section styles
  -------- */ 
-.accordion {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	text-align: left;
-	border: none;
-	outline: none;
-	transition: 0.4s;
-	border-radius: 10px 10px 0px 0px;
+ .accordion {
+	 background-color: #eee;
+	 color: #444;
+	 cursor: pointer;
+	 padding: 18px;
+	 width: 100%;
+	 text-align: left;
+	 border: none;
+	 outline: none;
+	 transition: 0.4s;
+	 border-radius: 10px 10px 0px 0px;
 }
 .active, .accordion:hover {
 	background-color: #ccc;
@@ -200,4 +230,38 @@ Faq section styles
 }
 .active:after {
 	content: "\2796";
+}
+	
+/* --------
+Footer section styles
+	-------- */ 
+
+footer {
+	background-color: #130429;
+	color: #fff;
+}
+
+footer a {
+	display: block;
+	color: #fff;
+	font-size: 16px;
+}
+
+footer .is-black {
+	background-color: #000;
+}
+
+footer p.copyright {
+	color: #fff;
+	font-size: 8px;
+}
+
+footer .is-white {
+	background-color: #fff;
+}
+
+footer .footer-qr-image {
+	background-image: url('../img/footer-qr.png');
+	width: auto;
+	height: 40px;
 }
