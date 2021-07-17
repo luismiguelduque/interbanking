@@ -170,6 +170,10 @@ p.bold {
 
 .is-primary {
 	color: #5E26CE;
+}
+
+.is-primary-gradient {
+	color: #5E26CE;
 	background: linear-gradient(223.26deg, #5E26CE -11.85%, #A333F5 114.71%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -204,6 +208,14 @@ p.bold {
 }
 
 /*----- Card main -----*/
+
+.info-card {
+	width: 75%;
+}
+
+.info-card .card-content{
+	width: 75%;
+}
 
 .item {
     display: flex;
