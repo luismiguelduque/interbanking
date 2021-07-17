@@ -122,13 +122,12 @@ a {
 }
 
 
-/*------------*/
+/*------ CSS General------*/
 
 .margin-center {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 /*----- Card main -----*/
 
@@ -167,17 +166,17 @@ a {
 /* --------
 Faq section styles
  -------- */ 
-.accordion {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	text-align: left;
-	border: none;
-	outline: none;
-	transition: 0.4s;
-	border-radius: 10px 10px 0px 0px;
+ .accordion {
+	 background-color: #eee;
+	 color: #444;
+	 cursor: pointer;
+	 padding: 18px;
+	 width: 100%;
+	 text-align: left;
+	 border: none;
+	 outline: none;
+	 transition: 0.4s;
+	 border-radius: 10px 10px 0px 0px;
 }
 .active, .accordion:hover {
 	background-color: #ccc;
@@ -200,4 +199,31 @@ Faq section styles
 }
 .active:after {
 	content: "\2796";
+}
+	
+/* --------
+Footer section styles
+	-------- */ 
+
+footer {
+	background-color: #130429;
+	color: #fff;
+}
+
+footer a {
+	display: block;
+	color: #fff;
+}
+
+footer .is-black {
+	background-color: #000;
+}
+
+footer p.copyright {
+	color: #fff;
+	font-size: 8px;
+}
+
+footer .is-white {
+	background-color: #fff;
 }
