@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 .sub-section {
 	margin-bottom: 60px;
 }
@@ -127,6 +129,41 @@ a {
 	margin-right: auto;
 }
 
+
+/*----- Card main -----*/
+
+.item {
+    display: flex;
+	margin: 15px 0;
+}
+
+.item .item-image {
+    background: #FAFAFA;
+    border-radius: 5px;
+    border: 1px solid #EEE;
+    display: flex;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.item .item-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item .item-description {
+    font-size: 12px;
+}
+
+.card.rb-card.is-green {
+    border-top: 30px solid #69BC8B;
+}
+
+.card.rb-card.is-blue {
+    border-top: 30px solid #74ABD1;
+}
 /* --------
 Faq section styles
  -------- */ 
