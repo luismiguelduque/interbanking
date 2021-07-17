@@ -188,7 +188,7 @@ p.bold {
 }
 
 .is-primary {
-	color: #5E26CE;
+	color: #5E26CE !important;
 }
 
 .is-primary-gradient {
@@ -263,6 +263,17 @@ p.bold {
 	margin-bottom: 100px;
 }
 
+.is-white {
+	background-color: #fff !important;
+}
+
+/*----- Custom Navbar -----*/
+
+.navbar-buttons {
+	display: flex;
+}
+
+
 /*----- Card main -----*/
 
 .info-card {
@@ -324,6 +335,14 @@ p.bold {
 
 .items-list .item .item-image.a3::before {
 	content: url('../img/card-icons/clock-outline.svg');
+}
+
+.items-list .item .item-image.b1::before {
+	content: url('../img/card-icons/pie-chart-outline.svg');
+}
+
+.items-list .item .item-image.b2::before {
+	content: url('../img/card-icons/bell-outline.svg');
 }
 
 .items-list .item .item-title {
@@ -411,10 +430,6 @@ footer p.copyright {
 	color: #fff;
 	font-size: 8px;
 	margin: 0;
-}
-
-footer .is-white {
-	background-color: #fff;
 }
 
 footer .footer-qr-image {
