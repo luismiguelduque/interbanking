@@ -1,24 +1,25 @@
 const FaqSection = Vue.component('faq-section', {
     template: `
         <div>
-            FAQ section
-            <div v-for="item in items">
-                <div>{{ item.question }}</div>
-                <div>{{ item.answer }}</div>
+            <div class="columns is-centered">
+                <div class="column is-6  has-text-centered">
+                    <h2 class="h2">Preguntas frecuentes</h3>
+                </div>
             </div>
-            <button class="accordion">Section 1</button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div v-for="item in items">
+                        <button class="accordion">{{ item.title }}</button>
+                        <div class="panel">
+                            {{ item.content }}
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <button class="accordion">Section 2</button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-            </div>
-
-            <button class="accordion">Section 3</button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            <div class="columns is-centered">
+                <div class="column is-6 has-text-centered">
+                    <button class="button is-small is-primary">Ver mas</button>
+                </div>
             </div>
         </div>
     `,
@@ -34,8 +35,10 @@ const FaqSection = Vue.component('faq-section', {
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
+                    //panel.style.padding = "0px 0px 0px 0px";
                 } else {
                     panel.style.maxHeight = panel.scrollHeight + "px";
+                    //panel.style.padding = "15px 15px 15px 15px";
                 }
             });
         }

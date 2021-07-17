@@ -177,6 +177,7 @@ Faq section styles
 	border: none;
 	outline: none;
 	transition: 0.4s;
+	border-radius: 10px 10px 0px 0px;
 }
 .active, .accordion:hover {
 	background-color: #ccc;
@@ -187,6 +188,8 @@ Faq section styles
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
+	border-radius: 0px 0px 10px 10px;
+	margin-bottom: 30px;
 }
 .accordion:after {
 	content: '\02795';
