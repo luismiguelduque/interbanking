@@ -2,7 +2,7 @@ const FaqSection = Vue.component('faq-section', {
     template: `
         <div>
             <div class="hero-body is-background-primary  p-b-30 ">
-                <div class="container">
+                <div class="container has-text-centered">
                     <h1 v-if="isPage" class="title">
                         <span class="is-size-2 has-text-centered is-block">¿TENÉS DUDAS?</span>
                     </h1>
