@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap');
 
 .sub-section {
 	margin-bottom: 60px;
@@ -57,13 +57,7 @@
 .is-ellipsis-2 {
 	-webkit-line-clamp: 2;
 }
-h1,
-h2,
-h3,
-h4 {
-	font-family: Montserrat, sans-serif;
-	font-weight: 600;
-}
+
 .title {
 	font-weight: 600;
 }
@@ -124,9 +118,46 @@ a {
 
 /*------ CSS General------*/
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 57px;
+	line-height: 106.9%;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 106.9%;
+}
+
 .margin-center {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.is-primary {
+	color: #5E26CE;
+}
+
+.is-primary-bg {
+	background: #5E26CE;
 }
 
 /*----- Card main -----*/
@@ -213,6 +244,7 @@ footer {
 footer a {
 	display: block;
 	color: #fff;
+	font-size: 16px;
 }
 
 footer .is-black {
@@ -226,4 +258,10 @@ footer p.copyright {
 
 footer .is-white {
 	background-color: #fff;
+}
+
+footer .footer-qr-image {
+	background-image: url('../img/footer-qr.png');
+	width: auto;
+	height: 40px;
 }
