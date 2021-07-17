@@ -1,6 +1,6 @@
 const HeaderSection = Vue.component('header-section', {
     template: `
-        <section class="hero is-fullheight is-light" >
+        <section class="hero is-light" >
             <div class="hero-head">
                 <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
                     <div class="container">
