@@ -4,7 +4,7 @@ const HeaderSection = Vue.component('header-section', {
             <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="rent.html">
+                        <a class="navbar-item" href="/index.html">
                             <img src="./img/logo.png" class="mt-2" alt="Logo Interbanking" height="30">
                         </a>
                         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTopMain">
