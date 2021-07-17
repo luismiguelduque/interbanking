@@ -147,6 +147,15 @@ h4 {
 	line-height: 106.9%;
 }
 
+p {
+	font-size: 16px;
+	line-height: 143.4%;
+}
+
+p.bold {
+	font-weight: bold;
+}
+
 .margin-center {
 	margin-left: auto;
 	margin-right: auto;
@@ -158,6 +167,10 @@ h4 {
 
 .is-primary-bg {
 	background: #5E26CE;
+}
+
+.p-b-50 {
+	padding-bottom: 50px;
 }
 
 /*----- Card main -----*/
@@ -239,6 +252,7 @@ Footer section styles
 footer {
 	background-color: #130429;
 	color: #fff;
+	padding: 50px 0;
 }
 
 footer a {
@@ -264,4 +278,9 @@ footer .footer-qr-image {
 	background-image: url('../img/footer-qr.png');
 	width: auto;
 	height: 40px;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin-right: 15px;
 }
