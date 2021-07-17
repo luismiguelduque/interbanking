@@ -1,10 +1,13 @@
 const FaqSection = Vue.component('faq-section', {
     template: `
         <div>
-            <div class="columns is-centered">
-                <div class="column is-6  has-text-centered">
-                    <h3 v-if="!isPage" class="h3">Preguntas frecuentes</h3>
-                    <h2 v-else class="h2">¿TENÉS DUDAS?</h2>
+            <div class="hero-body is-background-primary  p-b-30 ">
+                <div class="container">
+                    <h1 v-if="isPage" class="title">
+                        <span class="is-size-2 has-text-centered is-block">¿TENÉS DUDAS?</span>
+                    </h1>
+                    <h2 v-else class="h2">Preguntas frecuentes</h2>
+                    
                 </div>
             </div>
             <div class="columns is-centered">
