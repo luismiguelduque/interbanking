@@ -14,7 +14,7 @@ const HeaderSection = Vue.component('header-section', {
                         </a>
                     </div>
                     <div class="navbar-menu" id="navbarTopMain">
-                        <div class="navbar-start margin-center">
+                        <div class="navbar-end margin-center">
                             <div class="navbar-item has-dropdown is-hoverable">
                                 <a class="navbar-item has-text-weight-semibold">
                                     Soluciones
