@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="author" content="Aldi Duzha">
+	<meta name="description" content="Search houses and apartments for rent anywhere within the US. View floorplans, pricing, images and more. Find your perfect rental.">
+	<meta name="keywords" content="bulma, rent, template, apartments, page, website, free, awesome">
+	<link rel="canonical" href="https://aldi.github.io/bulma-rent-template/index.html"/>
     <title>Defensa y protección al consumidor</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1cc1503c6a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-bulma-accordion@0.5.2/dist/main.min.js"></script>
+    <script src="./components/header-section.js"></script>
+    <script src="./components/faq-section.js"></script>
+    <script src="./components/footer-section.js"></script>
+    <script src="./components/plans-section.js"></script>
 </head>
 <body>
-    <h1> Defensa y protección al consumidor </h1>
+    <div id="app">
+		<section class="hero is-light" >
+            <header-section></header-section>
+        </section>
+        <div class="hero-body is-background-primary  p-b-30 ">
+			<div class="container">
+				<h1 class="title">
+					<span class="is-size-2 has-text-centered is-block">Defensa y protección al consumidor</span>
+				</h1>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="container">
+                    <h1 class="title">
+                        <span class="is-size-4 is-block">Defensa y protección al consumidor</span>
+                    </h1>
+                    <h1 class="subtitle">
+                        <span class="is-size-6 is-block">ARTICULO 10 ter de la Ley 24240:</span>
+                    </h1>
+                </div>
+                <br>
+                <p>
+                    Modos de Rescisión. Cuando la contratación de un servicio, incluidos los servicios públicos domiciliarios, haya sido realizada en forma telefónica, electrónica o similar, podrá ser rescindida a elección del consumidor o usuario mediante el mismo medio utilizado en la contratación.
+                </p>
+                <br><br>
+                <p>
+                    La empresa receptora del pedido de rescisión del servicio deberá enviar sin cargo al domicilio del consumidor o usuario una constancia fehaciente dentro de las SETENTA Y DOS (72) horas posteriores a la recepción del pedido de rescisión. Esta disposición debe ser publicada en la factura o documento equivalente que la empresa enviare regularmente al domicilio del consumidor o usuario.
+                </p>
+                <br><br>
+                <p>
+                    Para consultas y/o denuncias ingrese <a href="#">aquí.</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    new Vue({
+        el: '#app',
+        components: {
+            HeaderSection,
+            FooterSection,
+        },
+    });
+</script>
