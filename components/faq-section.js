@@ -3,7 +3,8 @@ const FaqSection = Vue.component('faq-section', {
         <div>
             <div class="columns is-centered">
                 <div class="column is-6  has-text-centered">
-                    <h2 class="h2">Preguntas frecuentes</h3>
+                    <h3 v-if="!isPage" class="h3">Preguntas frecuentes</h3>
+                    <h2 v-else class="h2">¿TENÉS DUDAS?</h2>
                 </div>
             </div>
             <div class="columns is-centered">
@@ -16,15 +17,16 @@ const FaqSection = Vue.component('faq-section', {
                     </div>
                 </div>
             </div>
-            <div class="columns is-centered">
+            <div v-if="!isPage" class="columns is-centered">
                 <div class="column is-6 has-text-centered">
-                    <button class="button is-small is-primary">Ver mas</button>
+                    <a href="preguntas-frecuentes.html" class="button is-small is-primary">Ver mas</a>
                 </div>
             </div>
         </div>
     `,
     props: {
         items: Array,
+        isPage: Boolean,
     },
     mounted(){
         var acc = document.getElementsByClassName("accordion");
