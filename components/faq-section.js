@@ -2,24 +2,23 @@ const FaqSection = Vue.component('faq-section', {
     template: `
         <div>
             <div class="columns is-centered">
-                <div class="column is-6">
+                <div class="column is-6  has-text-centered">
                     <h2 class="h2">Preguntas frecuentes</h3>
                 </div>
             </div>
             <div class="columns is-centered">
                 <div class="column is-8">
-                        <div v-for="item in items">
-                            <button class="accordion">{{ item.title }}</button>
-                            <div class="panel">
-                                {{ item.content }}
-                            </div>
+                    <div v-for="item in items">
+                        <button class="accordion">{{ item.title }}</button>
+                        <div class="panel">
+                            {{ item.content }}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="columns is-centered">
-                <div class="column is-6">
-                    <button class="is-primary">Ver mas</button>
+                <div class="column is-6 has-text-centered">
+                    <button class="button is-small is-primary">Ver mas</button>
                 </div>
             </div>
         </div>
