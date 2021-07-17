@@ -252,7 +252,7 @@ Footer section styles
 footer {
 	background-color: #130429;
 	color: #fff;
-	padding: 50px 0;
+	padding-top: 50px;
 }
 
 footer a {
