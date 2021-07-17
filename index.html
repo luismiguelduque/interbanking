@@ -22,57 +22,8 @@
     </head>
 <body>
 	<div id="app">
-		<section class="hero is-fullheight is-light" >
-			<div class="hero-head">
-				<nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
-					<div class="container">
-						<div class="navbar-brand">
-							<a class="navbar-item" href="rent.html">
-								<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma Rent" width="80" height="20">
-							</a>
-							<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTopMain">
-								<span aria-hidden="true"></span>
-								<span aria-hidden="true"></span>
-								<span aria-hidden="true"></span>
-							</a>
-						</div>
-						<div class="navbar-menu" id="navbarTopMain">
-							<div class="navbar-end margin-center">
-                                <a href="#"
-                                class="navbar-item has-text-weight-semibold">Soluciones</a>
-                                <a href="#"
-                                class="navbar-item has-text-weight-semibold">Planes</a>
-                                <a href="#"
-                                class="navbar-item has-text-weight-semibold">Quiénes somos</a>
-                                <a href="#" class="navbar-item has-text-weight-semibold">FAQS</a>
-						    </div>
-                            <div class="navbar-item">
-                                <a href="https://aldi.github.io/awesome-bulma-templates/templates/login/login.html" class="">
-                                    Solicitar
-                                </a>
-                            </div>
-                            <div class="navbar-item">
-                                <a href="https://aldi.github.io/awesome-bulma-templates/templates/login/login.html" class="button is-primary">
-                                    Ingresá
-                                </a>
-                            </div>
-					    </div>
-				    </div>
-			    </nav>
-		    </div>
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns is-centered">
-                        <div class="column is-5">
-                            <h1>La <span class="is-primary-gradient">evolución</span> de tu gestión financiera</h1>
-                            <h4>Todas las soluciones bancarias para tu negocio en una misma plataforma</h4>
-                        </div>
-                        <div class="column is-7 has-text-centered">
-                            <img class="" src="img/pc-home.png" alt="La evolución de tu gestión financiera">
-                        </div>
-                    </div>
-                </div>
-            </div>
+		<section class="hero is-light" >
+            <header-section></header-section>
         </section>
         <section class="hero is-medium has-text-centered" >
             <div class="hero-body ">
@@ -393,71 +344,18 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="columns is-multiline is-centered">
-                <div class="column is-9">
-                    <img src="img/logo-negativo.png" alt="Agencia de acceso a la información pública">
-                </div>
-            </div>
-            <div class="columns is-multiline is-centered p-b-50">
-                <div class="column is-3">
-                    <a href="">Seguridad</a>
-                    <a href="">Defensa y Protección al consumidor</a>
-                    <a href="">Aviso Legal</a>
-                    <a href="">Protección de datos personales</a>
-                </div>
-                <div class="column is-3">
-                    <p class="bold">Contactá a nuestro equipo</p class="bold">
-                    <p>(54-11) 5554-2999</p>
-                    <p>(54-11) 3987-2999</p>
-                </div>
-                <div class="column is-3">
-                    <p class="bold">Seguinos</p>
-                    <div class="social-media">
-                        <a href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="columns is-multiline">
-                <div class="column is-12 has-text-centered is-black">
-                    <p class="copyright">
-                        INTERBANKING S.A.- Cecilia Grierson 255, Piso 3, CP C1107CPE, Tel: 54.11.5554-2999 | C.A.B.A, Buenos Aires, Argentina ©2021
-                    </p>
-                </div>
-                <div class="column is-12 has-text-centered is-white footer-qr-img">
-                    <img src="img/footer-qr.png" alt="Agencia de acceso a la información pública">
-                </div>
-            </div>
-        </footer>
+        
+        <footer-section></footer-section>
 
     </div>
-<script>
-	document.addEventListener('DOMContentLoaded', () => {
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-            // Add a click event on each of them
-            $navbarBurgers.forEach( el => {
-            	el.addEventListener('click', () => {
-                    // Get the target from the "data-target" attribute
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-                });
-            });
-        }
-    });
-</script>
 </body>
 </html>
+<script>
+    new Vue({
+        el: '#app',
+        components: {
+            HeaderSection,
+            FooterSection,
+        },
+    });
+</script>
