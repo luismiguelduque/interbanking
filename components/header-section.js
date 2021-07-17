@@ -39,7 +39,7 @@ const HeaderSection = Vue.component('header-section', {
                         </div>
                         <div class="navbar-end">
                             <div class="navbar-item">
-                                <a href="#" class="">
+                                <a href="#" class="button-link is-primary">
                                     Solicitar
                                 </a>
                             </div>
