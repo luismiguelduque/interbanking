@@ -305,6 +305,43 @@ p.bold {
 	top: 30%;
 }
 
+.info-card.img-left {
+    margin-left: auto;
+}
+
+.info-card.img-left .card-content{
+	margin-left: 25%;
+}
+
+.info-card.img-left .image-box {
+	width: 430px;
+	height: 370px;
+	background: #EC8068;
+	position: absolute;
+	top: 10%;
+	right: 80%;
+	border-radius: 40px;
+}
+
+.single-card {
+	max-width: 550px;
+	margin: auto;
+	box-shadow: 0px 2px 20px rgba(112, 144, 176, 0.149);
+	border-radius: 25px;
+}
+
+.single-card img {
+	height: 280px;
+}
+
+.info-card.img-left .image-box::after {
+	content: url('../img/our-solutions/box2.png');
+	background-color: #fff;
+	left: 20%;
+	position: relative;
+	top: 30%;
+}
+
 .items-list {
 	margin: 35px 0;
 }
