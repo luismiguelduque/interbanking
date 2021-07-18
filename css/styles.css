@@ -874,3 +874,14 @@ Digital salary section styles
 .card.rb-card.is-orange {
     border-top: 30px solid #ec8068;
 }
+
+
+.banks-slide {
+    align-items: center;
+    background-color: #666;
+    color: #999;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    min-height: 10rem;
+}
