@@ -797,6 +797,16 @@ footer .social-media a {
     margin-right: 15px;
 }
 
+@media (max-width: 768px) {
+	footer .mobile-screen {
+		margin-left: 30px;
+	}
+	footer .mobile-screen a, footer .mobile-screen p {
+		font-size: 12px;
+		padding: 8px 0;
+	}
+}
+
 /* --------
 About Us section styles
 	-------- */
