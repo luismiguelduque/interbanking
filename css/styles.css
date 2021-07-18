@@ -261,7 +261,6 @@ p.bold {
 .is-primary {
     color: #5e26ce !important;
 }
-
 .is-primary-gradient {
     color: #5e26ce;
     background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
@@ -344,6 +343,16 @@ p.bold {
 
 .is-red {
     color: rgb(242, 53, 108);
+}
+
+.is-orange {
+    color: #ec8068;
+}
+.is-page-title-resposive {
+    font-size: calc(40px + (57 - 40) * ((100vw - 300px) / (1600 - 300)));
+}
+.is-title-resposive {
+    font-size: calc(30px + (47 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 /*----- Custom Navbar -----*/
 
@@ -793,7 +802,7 @@ About Us section styles
 Digital salary section styles
 	-------- */
 
-.hero-division {
+.digital-salary.hero-division {
     border-bottom: 30px solid #74abd1;
 }
 .card.rb-card.is-pink {
@@ -801,4 +810,49 @@ Digital salary section styles
 }
 .card.rb-card.is-orange {
     border-top: 30px solid #ec8068;
+}
+/* --------
+Payments and collections section styles
+	-------- */
+.payments-and-collections.hero-division {
+    border-bottom: 30px solid #ec8068;
+}
+.features-list-primary li:before {
+    content: "• ";
+    color: #a333f5;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+}
+
+.features-list-orange li:before {
+    content: "• ";
+    color: #ec8068;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+}
+.payments-and-collections-ellipse-1 {
+    background-image: url("/img/payments-and-collection/ellipse-1.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100%;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
+}
+.payments-and-collections-ellipse-2 {
+    background-image: url("/img/payments-and-collection/ellipse-2.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.payments-and-collections-ellipse-3 {
+    background-image: url("/img/payments-and-collection/ellipse-3.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
 }
