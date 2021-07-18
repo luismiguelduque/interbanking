@@ -123,6 +123,36 @@ body {
 	font-size: 16px;
 }
 
+.borderless-table{
+	border: none !important
+}
+
+.color-icon-table-check{
+	color: #A333F5
+}
+
+.color-primary{
+	border-color: #5E26CE;
+	color: #5E26CE
+}
+
+.cards-plans{
+	border-radius: 20px; border: 1px solid #79717136;
+}
+
+#card-initial:hover{
+	border-radius: 20px; border: 3px solid #A333F5;
+}
+
+#btn-card-initial:hover{
+	border-color: #A333F5;
+	color: #A333F5;
+}
+
+.body-table{
+	color: #8b8888
+}
+
 h1,
 h2,
 h3,
@@ -252,7 +282,7 @@ p.bold {
 }
 /* --------
 Faq section styles
- -------- */ 
+ -------- */
  .accordion {
 	 background-color: #eee;
 	 color: #444;
@@ -287,10 +317,10 @@ Faq section styles
 .active:after {
 	content: "\2796";
 }
-	
+
 /* --------
 Footer section styles
-	-------- */ 
+	-------- */
 
 footer {
 	background-color: #130429;
