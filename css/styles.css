@@ -402,6 +402,66 @@ p.bold {
     border-top: 30px solid #74ABD1;
 }
 /* --------
+Why we? styles
+ -------- */ 
+ .why-we {
+	padding: 9rem 0;
+ }
+
+ .why-we .background-gradient {
+	background: linear-gradient(223.26deg, #5E26CE -11.85%, #A333F5 114.71%);
+	width: 100%;
+	padding: 70px 0;
+	margin: 30px 0;
+ }
+
+ .why-we .background-gradient h2 {
+	 font-size: 72px;
+	 text-align: center;
+	 color: #fff;
+}
+
+.why-we .background-gradient h4 {
+	color: #fff;	
+}
+
+.why-we .references .amount {
+	position: relative;
+}
+.why-we .references .amount {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 75.7843px;
+	line-height: 106.9%;
+	text-align: center;
+	color: #3B3B44;
+	height: 95px;
+	
+}
+
+.why-we .references.line::before {
+	content: '';
+	width: 2px;
+	height: 135px;
+	background-color: #3B3B44;
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.why-we .references .amount span {
+	font-size: 32.24px;
+}
+
+.why-we .references p.bold {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+
+
+/* --------
 Faq section styles
  -------- */ 
  .accordion {
