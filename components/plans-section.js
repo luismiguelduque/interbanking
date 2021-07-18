@@ -116,7 +116,7 @@ const PlansSection = Vue.component('plans-section', {
                                                         <span class="is-pulled-left has-text-weight-bold">
                                                             Tipos de transferencias
                                                         </span><br>
-                                                        <small class="is-pulled-left">
+                                                        <small class="is-pulled-left is-size-7">
                                                             (Propias, proveedores, terceros)
                                                         </small>
                                                     </td>
@@ -136,18 +136,18 @@ const PlansSection = Vue.component('plans-section', {
                                                         <span class="is-pulled-left has-text-weight-bold">
                                                             Transferencias
                                                         </span><br>
-                                                        <smal class="is-pulled-left">
+                                                        <small class="is-pulled-left is-size-7">
                                                             Propias, proveedores, terceros
-                                                        </smal>
-                                                        <smal class="is-pulled-right has-text-weight-bold">
+                                                        </small>
+                                                        <small class="is-pulled-right has-text-weight-bold">
                                                             150
-                                                        </smal><br>
-                                                        <smal class="is-pulled-left">
+                                                        </small><br>
+                                                        <small class="is-size-7 is-pulled-left">
                                                             Sueldos
-                                                        </smal>
-                                                        <smal class="is-pulled-right has-text-weight-bold">
+                                                        </small>
+                                                        <small class="is-pulled-right has-text-weight-bold">
                                                             300
-                                                        </smal>
+                                                        </small>
                                                     </td>
                                                 </tr>
                                                 </table>
@@ -205,7 +205,7 @@ const PlansSection = Vue.component('plans-section', {
                                                         <span class="is-pulled-left has-text-weight-bold">
                                                             Tipos de transferencias
                                                         </span><br>
-                                                        <small class="is-pulled-left">
+                                                        <small class="is-pulled-left is-size-7">
                                                             (Propias, proveedores, terceros, judiciales, sueldos)
                                                         </small>
                                                     </td>
@@ -225,16 +225,16 @@ const PlansSection = Vue.component('plans-section', {
                                                         <span class="is-pulled-left has-text-weight-bold">
                                                             Transferencias
                                                         </span><br>
-                                                        <smal class="is-pulled-left">
+                                                        <small class="is-size-7 is-pulled-left">
                                                             Propias, proveedores, terceros
-                                                        </smal>
-                                                        <smal class="is-pulled-right has-text-weight-bold">
+                                                        </small>
+                                                        <small class="is-pulled-right has-text-weight-bold">
                                                             Ilimitado
-                                                        </smal><br>
-                                                        <smal class="is-pulled-left">
+                                                        </small><br>
+                                                        <small class="is-size-7 is-pulled-left">
                                                             Sueldos
-                                                        </smal>
-                                                        <smal class="is-pulled-right has-text-weight-bold">
+                                                        </small>
+                                                        <small class="is-pulled-right has-text-weight-bold">
                                                             Ilimitado
                                                         </smal>
                                                     </td>
@@ -294,7 +294,7 @@ const PlansSection = Vue.component('plans-section', {
                                                         <span class="is-pulled-left has-text-weight-bold">
                                                             Tipos de transferencias
                                                         </span><br>
-                                                        <small class="is-pulled-left">
+                                                        <small class="is-pulled-left is-size-7">
                                                             (Propias, proveedores, terceros, judiciales, sueldos)
                                                         </small>
                                                     </td>
@@ -314,18 +314,18 @@ const PlansSection = Vue.component('plans-section', {
                                                         <span class="is-pulled-left has-text-weight-bold">
                                                             Transferencias
                                                         </span><br>
-                                                        <smal class="is-pulled-left">
+                                                        <small class="is-pulled-left is-size-7">
                                                             Propias, proveedores, terceros
-                                                        </smal>
-                                                        <smal class="is-pulled-right has-text-weight-bold">
+                                                        </small>
+                                                        <small class="is-pulled-right has-text-weight-bold">
                                                             Ilimitado
-                                                        </smal><br>
-                                                        <smal class="is-pulled-left">
+                                                        </small><br>
+                                                        <small class="is-pulled-left is-size-7">
                                                             Sueldos
-                                                        </smal>
-                                                        <smal class="is-pulled-right has-text-weight-bold">
+                                                        </small>
+                                                        <small class="is-pulled-right has-text-weight-bold">
                                                             Ilimitado
-                                                        </smal>
+                                                        </small>
                                                     </td>
                                                 </tr>
                                             </table>
