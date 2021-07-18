@@ -1,4 +1,4 @@
-const PlansSection = Vue.component('plans-section', {
+const PlansSection = Vue.component("plans-section", {
     template: `
     <div class="p-5 hero is-white is-fullheight">
     <div class="columns is-centered hero-body">
@@ -8,7 +8,7 @@ const PlansSection = Vue.component('plans-section', {
                     <div class="columns is-centered">
                         <div class="column has-text-centered is-8">
                             <h1>
-                                <span class="is-size-2">EMPEZÁ A</span> <span class="is-primary-gradient">INTERBANKEAR</span>
+                                <span class="is-size-2">EMPEZÁ A</span> <span class="is-primary-gradient  is-title-resposive">INTERBANKEAR</span>
                             </h1>
                         </div>
                     </div>
@@ -357,5 +357,5 @@ const PlansSection = Vue.component('plans-section', {
         </div>
     </div>
 </div>
-    `
+    `,
 });

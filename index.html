@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue-bulma-accordion@0.5.2/dist/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-carousel@0.18.0/dist/vue-carousel.min.js"></script>
         <script src="./components/header-section.js"></script>
         <script src="./components/faq-section.js"></script>
         <script src="./components/footer-section.js"></script>
@@ -355,17 +356,18 @@
                         Cuando decimos que centralizamos la operatoria bancaria, lo decimos en serio.
                     </p>
                 </div>
+                
             </div>
         </section>
-        <section class="hero is-medium">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h2 class="subtitle">
-                        Planes
-                    </h2>
-                </div>
+        
+        <div class="columns">
+            <div class="column">
+                <vue-carousel :data="banksData" :indicators="false"></vue-carousel>
             </div>
-        </section>
+        </div>
+
+        <plans-section></plans-section>
+        <br><br>
 
         <faq-section :items="items" :is-page="false"></faq-section>
         
@@ -381,7 +383,8 @@
             HeaderSection,
             FaqSection,
             FooterSection,
-            PlansSection
+            PlansSection,
+            VueCarousel
         },
         data(){
             return {
@@ -393,7 +396,12 @@
                         'title': '¿Como me vinculo a una cominidad?', 
                         'content': ' Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
                     },
-                ]
+                ],
+                banksData: [
+                    `<div class="banks-slide">Slide item 01</div>`,
+                    `<div class="banks-slide">Slide item 02</div>`,
+                    `<div class="banks-slide">Slide item 03</div>`,
+                ],
             }
         }
     });
