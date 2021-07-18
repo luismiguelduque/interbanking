@@ -1,7 +1,7 @@
 const HeaderSection = Vue.component('header-section', {
     template: `
         <div class="hero-head">
-            <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-white is-spaced" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="./index.html">
@@ -37,9 +37,9 @@ const HeaderSection = Vue.component('header-section', {
                             <a href="./planes.html" class="navbar-item has-text-weight-semibold">Planes</a>
                             <a href="./sobre-nosotros.html" class="navbar-item has-text-weight-semibold">Quiénes somos</a>
                         </div>
-                        <div class="navbar-end">
+                        <div class="navbar-buttons">
                             <div class="navbar-item">
-                                <a href="#" class="">
+                                <a href="#" class="button-link is-primary">
                                     Solicitar
                                 </a>
                             </div>

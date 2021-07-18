@@ -177,6 +177,14 @@ h2 {
 	text-transform: uppercase;
 }
 
+h3 {
+	font-size: 36px;
+	line-height: 106.9%;
+	text-align: left;
+	color: #5E26CE;
+	margin-bottom: 15px;
+}
+
 h4 {
 	font-family: Montserrat;
 	font-style: normal;
@@ -186,8 +194,18 @@ h4 {
 }
 
 p {
+	font-size: 14px;
+	line-height: 161.4%;
+	margin-bottom: 15px;
+}
+
+p.subtitle {
 	font-size: 16px;
 	line-height: 143.4%;
+}
+
+p.grey {
+	color: #7A8285;
 }
 
 p.bold {
@@ -200,7 +218,7 @@ p.bold {
 }
 
 .is-primary {
-	color: #5E26CE;
+	color: #5E26CE !important;
 }
 
 .is-primary-gradient {
@@ -226,6 +244,43 @@ p.bold {
 	letter-spacing: 0.04em;
 }
 
+.button-outline.is-primary {
+	border: 1px solid #5E26CE;
+	color: #5E26CE;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 13px 32px;
+	text-transform: uppercase;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 106.9%;
+	letter-spacing: 0.04em;
+}
+
+.button-link.is-primary {
+	border: none;
+	color: #5E26CE;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 13px 32px;
+	text-transform: uppercase;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 106.9%;
+	letter-spacing: 0.04em;
+}
+
+.button-link.is-primary.arrow::after { 
+	content: "\f054";
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	margin-left: 10px;
+}
+
 .is-primary-bg {
 	background: #5E26CE;
 }
@@ -238,22 +293,95 @@ p.bold {
 	margin-bottom: 100px;
 }
 
+.is-white {
+	background-color: #fff !important;
+}
+
+/*----- Custom Navbar -----*/
+
+.navbar-buttons {
+	display: flex;
+}
+
+
 /*----- Card main -----*/
 
 .info-card {
 	width: 75%;
+	overflow: visible;
+	box-shadow: 0px 0.992436px 9.92436px rgba(112, 144, 176, 0.149);
+	border-radius: 12.4054px;
+	margin-bottom: 120px;
 }
 
 .info-card .card-content{
 	width: 75%;
 }
 
-.item {
+.info-card.img-right .image-box {
+	width: 430px;
+	height: 370px;
+	background: #BD67BF;
+	position: absolute;
+	top: 10%;
+	left: 75%;
+	border-radius: 40px;
+}
+
+.info-card.img-right .image-box::after {
+	content: url('../img/our-solutions/box1.png');
+	left: -15%;
+	position: relative;
+	top: 30%;
+}
+
+.info-card.img-left {
+    margin-left: auto;
+}
+
+.info-card.img-left .card-content{
+	margin-left: 25%;
+}
+
+.info-card.img-left .image-box {
+	width: 430px;
+	height: 370px;
+	background: #EC8068;
+	position: absolute;
+	top: 10%;
+	right: 80%;
+	border-radius: 40px;
+}
+
+.single-card {
+	max-width: 550px;
+	margin: auto;
+	box-shadow: 0px 2px 20px rgba(112, 144, 176, 0.149);
+	border-radius: 25px;
+}
+
+.single-card img {
+	height: 280px;
+}
+
+.info-card.img-left .image-box::after {
+	content: url('../img/our-solutions/box2.png');
+	background-color: #fff;
+	left: 20%;
+	position: relative;
+	top: 30%;
+}
+
+.items-list {
+	margin: 35px 0;
+}
+
+.items-list .item {
     display: flex;
 	margin: 15px 0;
 }
 
-.item .item-image {
+.items-list .item .item-image {
     background: #FAFAFA;
     border-radius: 5px;
     border: 1px solid #EEE;
@@ -264,13 +392,36 @@ p.bold {
     margin-right: 15px;
 }
 
-.item .item-title {
-    font-size: 14px;
-    font-weight: bold;
+.items-list .item .item-image.a1::before {
+	content: url('../img/card-icons/layout.svg');
 }
 
-.item .item-description {
+.items-list .item .item-image.a2::before {
+	content: url('../img/card-icons/activity-outline.svg');
+}
+
+.items-list .item .item-image.a3::before {
+	content: url('../img/card-icons/clock-outline.svg');
+}
+
+.items-list .item .item-image.b1::before {
+	content: url('../img/card-icons/pie-chart-outline.svg');
+}
+
+.items-list .item .item-image.b2::before {
+	content: url('../img/card-icons/bell-outline.svg');
+}
+
+.items-list .item .item-title {
+    font-size: 14px;
+	line-height: 161%;
+    font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.items-list .item .item-description {
     font-size: 12px;
+	line-height: 148.9%;
 }
 
 .card.rb-card.is-green {
@@ -280,6 +431,66 @@ p.bold {
 .card.rb-card.is-blue {
     border-top: 30px solid #74ABD1;
 }
+/* --------
+Why we? styles
+ -------- */ 
+ .why-we {
+	padding: 9rem 0;
+ }
+
+ .why-we .background-gradient {
+	background: linear-gradient(223.26deg, #5E26CE -11.85%, #A333F5 114.71%);
+	width: 100%;
+	padding: 70px 0;
+	margin: 30px 0;
+ }
+
+ .why-we .background-gradient h2 {
+	 font-size: 72px;
+	 text-align: center;
+	 color: #fff;
+}
+
+.why-we .background-gradient h4 {
+	color: #fff;	
+}
+
+.why-we .references .amount {
+	position: relative;
+}
+.why-we .references .amount {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 75.7843px;
+	line-height: 106.9%;
+	text-align: center;
+	color: #3B3B44;
+	height: 95px;
+	
+}
+
+.why-we .references.line::before {
+	content: '';
+	width: 2px;
+	height: 135px;
+	background-color: #3B3B44;
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.why-we .references .amount span {
+	font-size: 32.24px;
+}
+
+.why-we .references p.bold {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+
+
 /* --------
 Faq section styles
  -------- */
@@ -338,13 +549,14 @@ footer .is-black {
 	background-color: #000;
 }
 
+footer p {
+	margin: 0;
+}
+
 footer p.copyright {
 	color: #fff;
 	font-size: 8px;
-}
-
-footer .is-white {
-	background-color: #fff;
+	margin: 0;
 }
 
 footer .footer-qr-image {
