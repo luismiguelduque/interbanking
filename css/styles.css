@@ -140,8 +140,13 @@ body {
 	border-radius: 20px; border: 1px solid #79717136;
 }
 
-#card-initial:hover{
+.cards-plans:hover{
 	border-radius: 20px; border: 3px solid #A333F5;
+	color: #A333F5;
+}
+
+.cards-plans-small{
+	border-radius: 20px; border: 1px solid #79717136;
 }
 
 #btn-card-initial:hover{
@@ -151,6 +156,30 @@ body {
 
 .body-table{
 	color: #8b8888
+}
+
+#card-initial::before{
+	content: '';
+	display: block;
+	width: 195px;
+	height: 210px;
+	background-image: url('../img/Ellipse 107.png');
+	z-index: -1;
+	position: absolute;
+	left: -105px;
+	top: 156px;
+}
+
+#card-plus::after{
+	content: '';
+	display: block;
+	width: 204px;
+	height: 210px;
+	background-image: url('../img/Ellipse 103.png');
+	z-index: -1;
+	position: absolute;
+	left: 220px;
+	top: 345px;
 }
 
 h1,
@@ -274,10 +303,10 @@ p.bold {
 	letter-spacing: 0.04em;
 }
 
-.button-link.is-primary.arrow::after { 
+.button-link.is-primary.arrow::after {
 	content: "\f054";
-	font-family: "Font Awesome 5 Free"; 
-	font-weight: 900; 
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	margin-left: 10px;
 }
 
@@ -433,7 +462,7 @@ p.bold {
 }
 /* --------
 Why we? styles
- -------- */ 
+ -------- */
  .why-we {
 	padding: 9rem 0;
  }
@@ -452,7 +481,7 @@ Why we? styles
 }
 
 .why-we .background-gradient h4 {
-	color: #fff;	
+	color: #fff;
 }
 
 .why-we .references .amount {
@@ -467,7 +496,7 @@ Why we? styles
 	text-align: center;
 	color: #3B3B44;
 	height: 95px;
-	
+
 }
 
 .why-we .references.line::before {
