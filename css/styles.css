@@ -133,118 +133,6 @@ body {
     font-size: 16px;
 }
 
-.cards-plans:hover {
-    border-radius: 20px;
-    border: 3px solid #a333f5;
-    color: #a333f5;
-}
-
-.cards-plans .cards-plans-title {
-    margin: 15px;
-    padding: 15px;
-    border-radius: 20px;
-    border: 1px solid #79717136;
-}
-
-.cards-plans .cards-plans-title p.title {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cards-plans .card-content.items-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.cards-plans .card-content .icon-text:first-child,
-.cards-plans .card-content .icon-text:nth-child(4) {
-    width: 40%;
-}
-
-.cards-plans .card-content .icon-text {
-    width: 30%;
-    text-align: left;
-}
-
-.borderless-table {
-    border: none !important;
-}
-
-.color-icon-table-check {
-    color: #a333f5;
-}
-
-.color-primary {
-    border-color: #5e26ce;
-    color: #5e26ce;
-}
-
-.cards-plans {
-    border-radius: 20px;
-    border: 1px solid #79717136;
-}
-
-.btn-card-initial:hover {
-    border-color: #a333f5 !important;
-    color: #a333f5 !important;
-}
-
-.body-table {
-    color: #8b8888;
-    width: 100%;
-}
-
-.table.is-striped tr td {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
-.table.is-striped tr:nth-child(2n) {
-    background-color: #f4f5f9;
-}
-
-@media (max-width: 767px) {
-    .fs-xs-30 {
-        font-size: 30px;
-    }
-
-    .cards-plans .card-content.items-list {
-        flex-direction: column;
-    }
-
-    .cards-plans .card-content .icon-text,
-    .cards-plans .card-content .icon-text:first-child,
-    .cards-plans .card-content .icon-text:nth-child(4) {
-        width: 100%;
-    }
-}
-
-#card-initial::before {
-    content: "";
-    display: block;
-    width: 195px;
-    height: 210px;
-    background-image: url("../img/Ellipse 107.png");
-    z-index: -1;
-    position: absolute;
-    left: -105px;
-    top: 156px;
-}
-
-#card-plus::after {
-    /* content: ""; */
-    display: block;
-    width: 204px;
-    height: 210px;
-    background-image: url("../img/Ellipse 103.png");
-    z-index: -1;
-    position: absolute;
-    left: 220px;
-    top: 345px;
-}
-
 h1,
 h2,
 h3,
@@ -1403,6 +1291,120 @@ Digital bank section styles
     padding: 25px;
     box-shadow: 0px 0px 20px #eee;
     min-height: 260px;
+}
+
+/*
+    Plans
+***/
+
+.plans {
+    background: url(../img/Ellipse\ 103.png) 110% 103%/50% no-repeat, url(../img/Ellipse\ 107.png) -10% 50%/30% no-repeat;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .plans {
+        background: url(../img/Ellipse\ 103.png) 140% 103%/50% no-repeat, url(../img/Ellipse\ 107.png) -10% 50%/30% no-repeat;
+    }
+}
+@media (min-width: 1024px) {
+    .plans {
+        background: url(../img/Ellipse\ 103.png) 115% 110%/40% no-repeat, url(../img/Ellipse\ 107.png) -10% 70%/30% no-repeat;
+    }
+}
+
+@media (min-width: 1408px) {
+    .plans {
+        background: url(../img/Ellipse\ 103.png) 100% 110%/25% no-repeat, url(../img/Ellipse\ 107.png) 5% 70%/20% no-repeat;
+    }
+}
+
+.cards-plans:hover {
+    border-radius: 20px;
+    border: 3px solid #a333f5;
+    color: #a333f5;
+}
+
+.cards-plans .cards-plans-title {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #79717136;
+}
+
+.cards-plans .cards-plans-title p.title {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards-plans .card-content.items-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards-plans .card-content .icon-text:first-child,
+.cards-plans .card-content .icon-text:nth-child(4) {
+    width: 40%;
+}
+
+.cards-plans .card-content .icon-text {
+    width: 30%;
+    text-align: left;
+}
+
+.borderless-table {
+    border: none !important;
+}
+
+.color-icon-table-check {
+    color: #a333f5;
+}
+
+.color-primary {
+    border-color: #5e26ce;
+    color: #5e26ce;
+}
+
+.cards-plans {
+    border-radius: 20px;
+    border: 1px solid #79717136;
+}
+
+.btn-card-initial:hover {
+    border-color: #a333f5 !important;
+    color: #a333f5 !important;
+}
+
+.body-table {
+    color: #8b8888;
+    width: 100%;
+}
+
+.table.is-striped tr td {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.table.is-striped tr:nth-child(2n) {
+    background-color: #f4f5f9;
+}
+
+@media (max-width: 767px) {
+    .fs-xs-30 {
+        font-size: 30px;
+    }
+
+    .cards-plans .card-content.items-list {
+        flex-direction: column;
+    }
+
+    .cards-plans .card-content .icon-text,
+    .cards-plans .card-content .icon-text:first-child,
+    .cards-plans .card-content .icon-text:nth-child(4) {
+        width: 100%;
+    }
 }
 
 /*
