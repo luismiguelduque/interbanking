@@ -360,6 +360,10 @@ p.bold {
 .is-title-resposive {
     font-size: calc(30px + (47 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
+
+.m-zero {
+	margin: 0;
+}
 @media (max-width: 768px) {
     h1 {
         font-size: 40px;
@@ -726,7 +730,11 @@ Testimony section styles
 Why we? styles
  -------- */
 .why-we {
-    padding: 9rem 0;
+	padding: 9rem 0;
+}
+.why-we .background-gradient {
+	margin: 30px 0;
+	padding: 70px 0;
 }
 
 .why-we .background-gradient h2 {
@@ -770,6 +778,35 @@ Why we? styles
 .why-we .references p.bold {
     margin-top: 15px;
     margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+	.why-we .references.line::before {
+		content: "";
+		width: 40%;
+		height: 2px;
+		background-color: #3b3b44;
+		display: block;
+		border-radius: 50%;
+		position: relative;
+		left: 30%;
+		right: 30%;
+		margin-bottom: 20px;
+	}
+	.why-we .references .amount {
+		font-size: 74px;
+	}
+}
+@media (max-width: 991px) {
+	.why-we .background-gradient h2 {
+		font-size: 64px;
+	}
+	
+	.why-we .references .amount {
+		font-size: 74px;
+	}
+
+	
 }
 
 /* --------
