@@ -1,5 +1,5 @@
 const PlansSection = Vue.component("plans-section", {
-    template: `<section class="hero is-medium">
+    template: `<section class="hero is-medium plans">
     <div class="hero-body">
         <div class="container has-text-centered">
             <div class="columns is-centered">
