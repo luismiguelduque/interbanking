@@ -974,6 +974,16 @@ Why we? styles
 }
 
 /* --------
+All banks section styles
+ -------- */
+
+ .all-banks h2{
+    text-transform: none;
+    font-size: 22px;
+    margin-bottom: 10px !important;
+ }
+
+/* --------
 Faq section styles
  -------- */
 .accordion {
