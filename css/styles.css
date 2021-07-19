@@ -1401,6 +1401,7 @@ Digital bank section styles
     border-radius: 15px 15px 15px 15px;
     padding: 25px;
     box-shadow: 0px 0px 20px #eee;
+    min-height: 260px;
 }
 
 /*
