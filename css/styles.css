@@ -1194,12 +1194,13 @@ Payments and collections section styles
 Electronic billings tyles
 	-------- */
 	.card-icon.card {
-		margin-top: 50px;
+		margin-top: 100px;
 		padding: 40px 20px 0;
 		overflow: visible;
 		border: 1px solid #EEEEEE;
 		box-sizing: border-box;
 		border-radius: 25px;
+        height: 220px;
 	}
 	
 	.card-icon.card.plus-info::after {
@@ -1266,6 +1267,18 @@ Electronic billings tyles
 
 	.card-icon.card.archive-outline::after {
 		background: #fff url(../img/icons/archive-outline.svg) 50%/70% no-repeat;
+	}
+
+    .card-icon.card.copy-blue::after {
+		background: #fff url(../img/icons/copy-blue.svg) 50%/70% no-repeat;
+	}
+
+	.card-icon.card.archive-blue::after {
+		background: #fff url(../img/icons/archive-blue.svg) 50%/70% no-repeat;
+	}
+
+	.card-icon.card.edit-blue::after {
+		background: #fff url(../img/icons/edit-blue.svg) 50%/70% no-repeat;
 	}
 	
 	/* --------
@@ -1348,3 +1361,4 @@ a:hover {
     background-color:  #ccd6dd;
 }
 */
+
