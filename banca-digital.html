@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W2BRSR5');</script>
+        <!-- End Google Tag Manager -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
@@ -8,15 +15,19 @@
         <meta name="description" content="Banca digital – Todos tus bancos en una sola plataforma." />
         <meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital" />
         <title>Banca digital</title>
-        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2BRSR5"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <div id="app">
-            <section class="hero is-halfheight is-light digital-bank hero-division">
+            <section class="hero is-halfheight is-light digital-bank hero-division digital-bank-ellipse-1">
                 <header-section></header-section>
                 <div class="hero-body digital-bank">
                     <div class="container">
@@ -122,7 +133,7 @@
                 </div>
             </section>
             <div class="is-relative">
-                <section class="is-bd-difference-2 is-white"></section>
+                <section class="is-bd-difference-2 is-white digital-bank-ellipse-3"></section>
             </div>
 
             <div class="is-relative">
@@ -246,6 +257,11 @@
         top: -25vh;
     }
 
+    .digital-bank-ellipse-1,
+    .digital-bank-ellipse-3 {
+        background-image: none;
+    }
+
     @media (min-width: 560px) {
         .is-bd-difference-1 {
             height: 65vh;
@@ -258,6 +274,11 @@
             height: 16vh;
             top: -15vh;
         }
+        .digital-bank-ellipse-1 {
+            background-image: url("/img/digital-bank/ellipse-2.png");
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
     }
     @media (min-width: 769px) {
         .is-bd-difference-1 {
@@ -265,6 +286,11 @@
         }
         .is-bd-difference-3 {
             display: none;
+        }
+        .digital-bank-ellipse-1 {
+            background-image: url("/img/digital-bank/ellipse-1.png"), url("/img/digital-bank/ellipse-2.png");
+            background-position: right center, left center;
+            background-repeat: no-repeat, no-repeat;
         }
     }
     @media (min-width: 992px) {
@@ -274,6 +300,14 @@
         .is-bd-difference-2 {
             height: 30vh;
             top: -75vh;
+        }
+
+        .digital-bank-ellipse-3 {
+            background-image: url("/img/digital-bank/ellipse-3.png") !important;
+            background-repeat: no-repeat;
+            background-position-x: 81%;
+            background-position-y: -15%;
+            background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
         }
     }
     @media (min-width: 1216px) {
