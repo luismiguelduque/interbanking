@@ -818,12 +818,12 @@ Why we? styles
 	.why-we .background-gradient h2 {
 		font-size: 64px;
 	}
-	
+
 	.why-we .references .amount {
 		font-size: 74px;
 	}
 
-	
+
 }
 
 /* --------
@@ -1024,6 +1024,11 @@ Digital salary section styles
 .digital-salary.hero-division {
     border-bottom: 30px solid #74abd1;
 }
+
+.hero-division-green {
+    border-bottom: 30px solid #69bc8b;
+}
+
 .card.rb-card.is-pink {
     border-top: 30px solid #bd67bf;
 }
@@ -1084,4 +1089,26 @@ Payments and collections section styles
     font-size: 1.5rem;
     justify-content: center;
     min-height: 10rem;
+}
+/* --------
+Digital bank section styles
+	-------- */
+
+.digital-bank.hero-division {
+    border-bottom: 30px solid #bd67bf;
+}
+.digital-bank {
+    padding-bottom: 6em;
+    margin-bottom: 18%;
+}
+.digital-bank .frame-1 {
+    background-image: url("/img/digital-bank/frame-1.png");
+    height: 500px;
+    position: absolute;
+    background-size: contain;
+    max-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* top: 50%; */
 }

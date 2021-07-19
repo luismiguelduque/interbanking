@@ -29,7 +29,7 @@
         </section>
 
         <section class="hero background-gradient">
-            <div class="hero-body p-b-30 ">
+            <div class="hero-body">
                 <div class="container">
                     <div class="columns is-centered">
                         <div class="column is-10 has-text-centered has-text-white">
@@ -41,27 +41,32 @@
             </div>
         </section>
 
-        <div class="columns is-centered">
-            <div class="column is-8">
-                <div class="container">
-                    <h1 class="title">
-                        <span class="is-size-4 is-block">Interbanking</span>
-                    </h1>
+        <section class="hero is-light">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="container">
+                        <h1 class="title">
+                            <span class="is-size-4 is-block">Interbanking</span>
+                        </h1>
+                    </div>
+                    <p>
+                        cuenta con los más altos estándares de seguridad del mercado. Estamos permanentemente en desarrollo, actualizando nuestra tecnología para hacer frente a los requerimientos del mercado y de nuestros clientes, implementando los más modernos sistemas y medidas de seguridad y confidencialidad. Comprometidos con la calidad y la mejora continua, contamos con la certificación ISO 9001 para nuestro Cámara Compensadora, el Centro de Atención al Cliente y el Servicio de provisión, operación y mantenimiento de soluciones electrónicas.
+                    </p>
+                    <br>
+                    <p>
+                        Somos la primera empresa del sector financiero en certificar bajo la norma ISO 27001 Sistema de Seguridad de la Información. Nuestra Cámara Compensadora se encuentra homologada por el Banco Central de la República Argentina (BCRA), y a través de la homologación de la Administración Federal de Ingresos Públicos (AFIP), nos constituimos como una de las principales plataformas de recaudación del país.
+                    </p>
+                    <br>
+                    <p>
+                       <b> El esquema de seguridad abarca los siguientes aspectos:</b>
+                    </p>
                 </div>
-                <p>
-                    cuenta con los más altos estándares de seguridad del mercado. Estamos permanentemente en desarrollo, actualizando nuestra tecnología para hacer frente a los requerimientos del mercado y de nuestros clientes, implementando los más modernos sistemas y medidas de seguridad y confidencialidad. Comprometidos con la calidad y la mejora continua, contamos con la certificación ISO 9001 para nuestro Cámara Compensadora, el Centro de Atención al Cliente y el Servicio de provisión, operación y mantenimiento de soluciones electrónicas.
-                </p>
-                <br>
-                <p>
-                    Somos la primera empresa del sector financiero en certificar bajo la norma ISO 27001 Sistema de Seguridad de la Información. Nuestra Cámara Compensadora se encuentra homologada por el Banco Central de la República Argentina (BCRA), y a través de la homologación de la Administración Federal de Ingresos Públicos (AFIP), nos constituimos como una de las principales plataformas de recaudación del país.
-                </p>
-                <br>
-                <p>
-                    El esquema de seguridad abarca los siguientes aspectos:
-                </p>
             </div>
-        </div>
-        <br>
+            <br>
+
+            <faq-section :items="items" page="seguridad"></faq-section>
+            <br>
+        </section>
 
         <footer-section></footer-section>
         
@@ -72,8 +77,47 @@
     new Vue({
         el: '#app',
         components: {
+            FaqSection,
             HeaderSection,
             FooterSection,
         },
+        data(){
+            return {
+                items: [
+                    {
+                        'title': 'Requisitos mínimos para operar',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                    {
+                        'title': 'Infraestructura de comunicaciones',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                    {
+                        'title': 'Protocolo de encriptación TLS',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                    {
+                        'title': 'Otros aspectos de seguridad',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                    {
+                        'title': 'Uso de claves',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                    {
+                        'title': 'Acceso seguro',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                    {
+                        'title': 'Seguridad en su pc',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                    {
+                        'title': 'Proteja sus datos',
+                        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+                    },
+                ]
+            }
+        }
     });
 </script>

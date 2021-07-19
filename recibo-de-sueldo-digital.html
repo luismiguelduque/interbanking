@@ -74,9 +74,12 @@
                 </div>
             </section>
 
-            <other-solutions-section> </other-solutions-section>
+            <other-solutions-section 
+                :item1="{'text': 'Banca digital', 'url': './banca-digital.html'}"
+                :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html'}"
+            > </other-solutions-section>
 
-            <faq-section :items="items" :is-page="false"></faq-section>
+            <faq-section :items="items" page="otros"></faq-section>
 
             <plans-section></plans-section>
 
