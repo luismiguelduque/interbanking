@@ -582,18 +582,11 @@ p.bold {
 }
 
 @media (max-width: 991px) {
-    
-    .info-card.img-right .image-box {
-        background: transparent;
-    }
-
-    .info-card.img-left .image-box {
-        background: transparent;
-    }
 
     .info-card,
     .info-card .card-content {
         width: 100%;
+        z-index: auto;
     }
 
     .info-card.img-right,
@@ -632,7 +625,7 @@ p.bold {
     .info-card.img-right .image-box,
     .info-card.img-left .image-box {
         top: -5%;
-        left: -30%;
+        left: -20%;
         z-index: -1;
     }
 
@@ -1280,7 +1273,7 @@ Digital bank section styles
     position: absolute;
     height: 550px;
     display: block;
-    z-index: 999;
+    z-index: 9;
     top: 200px;
     width: 100%;
     background-size: contain;
