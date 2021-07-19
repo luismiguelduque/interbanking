@@ -441,6 +441,23 @@ p.bold {
     display: flex;
 }
 
+/*------ Home main ------*/
+
+.circles-main{
+	background: url(../img/home-main-1.svg) 500% 100%/90% no-repeat,
+	url(../img/home-main-3.svg) 10% 65%/30%  no-repeat;
+	width: 100%;
+}
+
+@media (min-width: 769px) {
+	.circles-main{
+		background: url(../img/home-main-1.svg) 500% 80%/90% no-repeat,
+		url(../img/home-main-2.svg) 10% 85%/5% no-repeat,
+		url(../img/home-main-3.svg) 90% 5%/10%  no-repeat;
+		width: 100%;
+	}	
+}
+
 /*----- Card main -----*/
 
 .info-card {
