@@ -5,20 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <meta name="author" content="AISA" />
-        <meta name="description" content="Todas las soluciones bancarias para tu negocio en una misma plataforma" />
+        <meta name="description" content="Recibo de sueldo digital – Simplificá la distribución, firma, recolección y guardado de los recibos de sueldo." />
         <meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital" />
         <title>Recibo de sueldo digital</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
         <script src="https://kit.fontawesome.com/1cc1503c6a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue-bulma-accordion@0.5.2/dist/main.min.js"></script>
-        <script src="./components/header-section.js"></script>
-        <script src="./components/faq-section.js"></script>
-        <script src="./components/footer-section.js"></script>
-        <script src="./components/plans-section.js"></script>
-        <script src="./components/other-solutions-section.js"></script>
     </head>
     <body>
         <div id="app">
@@ -94,46 +87,53 @@
             <footer-section></footer-section>
         </div>
     </body>
-</html>
-<script>
-    new Vue({
-        el: "#app",
-        components: {
-            HeaderSection,
-            FaqSection,
-            FooterSection,
-            PlansSection,
-            OtherSolutionsSection,
-        },
-        data() {
-            return {
-                items: [
-                    {
-                        title: "Ante consultas, ¿Cómo me comunico?",
-                        content: `Si ya sos cliente, y sos un operador registrado en la plataforma, nuestro Centro de
-                            Atención Integral al Cliente se encuentra a disposición los días hábiles de 7 a 20 hs o
-                            haciendo click en el link de contacto de nuestro sitio Web.<br><br>
-                            Si no sos cliente y tenes consultas sobre el servicio, ingresá al link de contacto de nuestro
-                            sitio Web y envianos tu consulta a través del formulario de contacto.`
-                    },
-                    {
-                        title: "¿Cómo hago si un empleado bloquea u olvida su usuario y claves de acceso al Recibo de Sueldo?",
-                        content:  `Si el empleado ya es usuario registrado en Interbanking, el mismo puede autogestionarse
-                            realizando los siguientes pasos:<br>
-                            • Ingresar por &#39;OPERAR&#39; con su Nacionalidad y CUIL. Luego presiona &#39;Aceptar&#39;.<br>
-                            • Hacer click en el botón &#39;GESTIÓN DE CLAVES&#39; y luego la opción &#39;Generar usuario y clave&#39;.<br>
-                            • Completar el formulario con los datos solicitados y presione &#39;Enviar&#39;.<br>
-                            • Verificar el estado del proceso de autogeneración, si no queda habilitada en el momento,
-                            estará disponible en el transcurso máximo de una hora.<br><br>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-bulma-accordion@0.5.2/dist/main.min.js"></script>
+    <script src="./components/header-section.js"></script>
+    <script src="./components/faq-section.js"></script>
+    <script src="./components/footer-section.js"></script>
+    <script src="./components/plans-section.js"></script>
+    <script src="./components/other-solutions-section.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            components: {
+                HeaderSection,
+                FaqSection,
+                FooterSection,
+                PlansSection,
+                OtherSolutionsSection,
+            },
+            data() {
+                return {
+                    items: [
+                        {
+                            title: "Ante consultas, ¿Cómo me comunico?",
+                            content: `Si ya sos cliente, y sos un operador registrado en la plataforma, nuestro Centro de
+                                Atención Integral al Cliente se encuentra a disposición los días hábiles de 7 a 20 hs o
+                                haciendo click en el link de contacto de nuestro sitio Web.<br><br>
+                                Si no sos cliente y tenes consultas sobre el servicio, ingresá al link de contacto de nuestro
+                                sitio Web y envianos tu consulta a través del formulario de contacto.`
+                        },
+                        {
+                            title: "¿Cómo hago si un empleado bloquea u olvida su usuario y claves de acceso al Recibo de Sueldo?",
+                            content:  `Si el empleado ya es usuario registrado en Interbanking, el mismo puede autogestionarse
+                                realizando los siguientes pasos:<br>
+                                • Ingresar por &#39;OPERAR&#39; con su Nacionalidad y CUIL. Luego presiona &#39;Aceptar&#39;.<br>
+                                • Hacer click en el botón &#39;GESTIÓN DE CLAVES&#39; y luego la opción &#39;Generar usuario y clave&#39;.<br>
+                                • Completar el formulario con los datos solicitados y presione &#39;Enviar&#39;.<br>
+                                • Verificar el estado del proceso de autogeneración, si no queda habilitada en el momento,
+                                estará disponible en el transcurso máximo de una hora.<br><br>
 
-                            Si el empleado <b>NO</b> es usuario registrado en Interbanking el empleador deberá asignarle
-                            un nuevo usuario y claves. Para ello debe ingresar a www.interbanking.com.ar con su
-                            usuario y clave accediendo por la opción Documentos &gt; Recibo de Sueldo Digital &gt;
-                            Empleados &gt; Buscar, busque el empleado y presione el botón de más opciones &gt;
-                            Generación de Claves.`
-                    },
-                ],
-            };
-        },
-    });
-</script>
+                                Si el empleado <b>NO</b> es usuario registrado en Interbanking el empleador deberá asignarle
+                                un nuevo usuario y claves. Para ello debe ingresar a www.interbanking.com.ar con su
+                                usuario y clave accediendo por la opción Documentos &gt; Recibo de Sueldo Digital &gt;
+                                Empleados &gt; Buscar, busque el empleado y presione el botón de más opciones &gt;
+                                Generación de Claves.`
+                        },
+                    ],
+                };
+            },
+        });
+    </script>
+</html>

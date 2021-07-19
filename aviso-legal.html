@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<meta name="author" content="AISA">
-	<meta name="description" content="Todas las soluciones bancarias para tu negocio en una misma plataforma">
-	<meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital">
-    <title>Aviso legal</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="author" content="AISA">
+        <meta name="description" content="Todas las soluciones bancarias para tu negocio en una misma plataforma">
+        <meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital">
+        <title>Aviso legal</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div id="app">
+
+            <section class="hero is-light" >
+                <header-section></header-section>
+            </section>
+
+            <section class="hero background-gradient">
+                <div class="hero-body ">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="column is-10 has-text-centered has-text-white">
+                                <h1>Aviso legal</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero is-light">
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <br><br>
+                        <div class="container">
+                            <h1 class="title">
+                                <span class="is-size-4 is-block">Interbanking S.A.</span>
+                            </h1>
+                        </div>
+                        <p>
+                            Es una sociedad constituida y vigente según las leyes de la República Argentina, inscripta en la Inspección General de Justicia, a cargo del Registro Público de Comercio de la Capital Federal con fecha 20/12/1996 bajo el número 12977.
+                        </p>
+                        <br><br>
+                    </div>
+                </div>
+            </section>
+
+            <footer-section></footer-section>
+            
+        </div>
+    </body>
     <script src="https://kit.fontawesome.com/1cc1503c6a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-bulma-accordion@0.5.2/dist/main.min.js"></script>
@@ -18,54 +59,13 @@
     <script src="./components/faq-section.js"></script>
     <script src="./components/footer-section.js"></script>
     <script src="./components/plans-section.js"></script>
-</head>
-<body>
-    <div id="app">
-
-		<section class="hero is-light" >
-			<header-section></header-section>
-        </section>
-
-        <section class="hero background-gradient">
-            <div class="hero-body ">
-                <div class="container">
-                    <div class="columns is-centered">
-                        <div class="column is-10 has-text-centered has-text-white">
-                            <h1>Aviso legal</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero is-light">
-            <div class="columns is-centered">
-                <div class="column is-8">
-                    <br><br>
-                    <div class="container">
-                        <h1 class="title">
-                            <span class="is-size-4 is-block">Interbanking S.A.</span>
-                        </h1>
-                    </div>
-                    <p>
-                        Es una sociedad constituida y vigente según las leyes de la República Argentina, inscripta en la Inspección General de Justicia, a cargo del Registro Público de Comercio de la Capital Federal con fecha 20/12/1996 bajo el número 12977.
-                    </p>
-                    <br><br>
-                </div>
-            </div>
-        </section>
-
-        <footer-section></footer-section>
-        
-    </div>
-</body>
+    <script>
+        new Vue({
+            el: '#app',
+            components: {
+                HeaderSection,
+                FooterSection,
+            },
+        });
+    </script>
 </html>
-<script>
-    new Vue({
-        el: '#app',
-        components: {
-            HeaderSection,
-            FooterSection,
-        },
-    });
-</script>
