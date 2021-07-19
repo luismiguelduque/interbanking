@@ -1,6 +1,7 @@
 const FaqSection = Vue.component('faq-section', {
     template: `
-        <div class="p-b-30">
+        <section class="hero is-light">
+            <br><br>
             <div v-if="page!='seguridad'" class="hero-body is-background-primary  p-b-30 ">
                 <div class="container has-text-centered">
                     <h1 v-if="page=='faq'" class="title">
@@ -24,8 +25,8 @@ const FaqSection = Vue.component('faq-section', {
                     <a href="preguntas-frecuentes.html" class="button is-small is-primary">Ver mas</a>
                 </div>
             </div>
-            <br>
-        </div>
+            <br><br>
+        </section>
     `,
     props: {
         items: Array,

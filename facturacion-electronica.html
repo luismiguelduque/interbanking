@@ -19,11 +19,12 @@
     <script src="./components/faq-section.js"></script>
     <script src="./components/footer-section.js"></script>
     <script src="./components/plans-section.js"></script>
+    <script src="./components/other-solutions-section.js"></script>
 </head>
 <body>
     <div id="app">
 
-		<section class="hero is-fullheight is-light" >
+		<section class="hero is-fullheight is-light digital-salary hero-division">
 			<header-section></header-section>
             <div class="hero-body">
                 <div class="container">
@@ -40,15 +41,53 @@
             </div>
         </section>
 
-        <div class="hero-body is-background-primary  p-b-30 ">
-			<div class="container">
-				<h1 class="title">
-					<span class="is-size-2 has-text-centered is-block">Facturacion electrónica</span>
-				</h1>
+        <section class="hero is-halfheight is-white">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns has-text-centered">
+                        <div class="column is-three-fifths is-offset-one-fifth">
+                            <h2>
+                                <span class="is-size-3 is-block">Automatizá acciones de facturación</span>
+                            </h2>
+                            <p class="is-size-6 p-t-30">y mejorá su monitoreo para tener un mayor control de lo que está pasando en tus finanzas</p>
+                        </div>
+                    </div>
+                    <div class="columns m-t-60">
+                        <div class="column is-6">
+                            <img class="" src="img/icons/paper-outline.png" alt="Liderazgo" />
+                            <p class="bold is-size-4">Para todos</p>
+                            <p class="is-size-6">37 tipos de comprobantes diferentes.</p>
+                        </div>
+                        <div class="column is-6">
+                            <img class="" src="img/icons/pencil-outline.png" alt="Confianza" />
+                            <p class="bold is-size-4">Personalizado</p>
+                            <p class="is-size-6">Customizá todos los documentos con la identidad de tu marca.</p>
+                        </div>
+                    </div>
+                    <div class="columns m-t-60">
+                        <div class="column is-6">
+                            <img class="" src="img/icons/archive-outline.png" alt="Confianza" />
+                            <p class="bold is-size-4">Smart</p>
+                            <p class="is-size-6">Integración con tu sistema de gestión..</p>
+                        </div>
+                        <div class="column is-6">
+                            <img class="" src="img/icons/archive-outline.png" alt="Confianza" />
+                            <p class="bold is-size-4">Trazabilidad</p>
+                            <p class="is-size-6">Seguimiento detallado de las recibos electrónicos.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <faq-section :items="items" :is-page="false"></faq-section>
+        <other-solutions-section 
+            :item1="{'text': 'Banca digital', 'url': './banca-digital.html'}"
+            :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html'}"
+        > </other-solutions-section>
+
+        <faq-section :items="items" page="otros"></faq-section>
+
+        <plans-section></plans-section>
         
         <footer-section></footer-section>
 
@@ -62,7 +101,8 @@
             HeaderSection,
             FaqSection,
             FooterSection,
-            PlansSection
+            PlansSection,
+            OtherSolutionsSection,
         },
         data(){
             return {

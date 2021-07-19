@@ -1,6 +1,6 @@
 const OtherSolutionsSection = Vue.component("other-solutions-section", {
     template: `
-            <section class="hero is-halfheight is-light">
+            <section class="hero is-halfheight is-white">
                 <div class="hero-body">
                     <div class="container">
                         <div class="columns has-text-centered">
@@ -8,23 +8,22 @@ const OtherSolutionsSection = Vue.component("other-solutions-section", {
                                 <h2>
                                     <span class="is-size-3 is-block">Otras soluciones</span>
                                 </h2>
-                                <p class="is-size-6 p-t-30">Simplificá la distribución, firma, seguimiento, recolección y guardado de los recibos de sueldo del personal</p>
                             </div>
                         </div>
                         <div class="columns m-t-60">
                             <div class="column is-6">
                                 <div class="card rb-card single-card is-pink">
                                     <div class="card-content has-text-left">
-                                        <h3 class="has-text-dark">Banca digital</h3>
-                                        <a href="/banca-digital" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
+                                        <h3 class="has-text-dark">{{ item1.text }}</h3>
+                                        <a v-bind:href="item1.url" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="column is-6">
                                 <div class="card rb-card single-card is-orange">
                                     <div class="card-content has-text-left">
-                                        <h3 class="has-text-dark">Pagos y cobranzas</h3>
-                                        <a href="/pagos-y-cobranzas" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
+                                        <h3 class="has-text-dark">{{ item2.text }}</h3>
+                                        <a v-bind:href="item2.url" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
                                     </div>
                                 </div>
                             </div>
@@ -33,4 +32,8 @@ const OtherSolutionsSection = Vue.component("other-solutions-section", {
                 </div>
             </section>
     `,
+    props: {
+        item1: Object,
+        item2: Object,
+    },
 });

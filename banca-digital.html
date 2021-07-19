@@ -181,10 +181,15 @@
                 </div>
             </section>
 
-            <other-solutions-section> </other-solutions-section>
+            <other-solutions-section 
+                :item1="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html'}"
+                :item2="{'text': 'Recibo de sueldo digital', 'url': './recibo-de-sueldo-digital.html'}"
+            > </other-solutions-section>
 
-            <faq-section :items="items" :is-page="false"></faq-section>
+            <faq-section :items="items" page="otros"></faq-section>
+
             <plans-section></plans-section>
+            
             <footer-section></footer-section>
         </div>
     </body>
