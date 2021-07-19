@@ -679,6 +679,17 @@ p.bold {
     .info-card.img-left .image-box::after {
         content: "";
     }
+
+}
+
+@media (min-width: 992px) {
+	.info-card.img-right .image-box {
+		background: #bd67bf url(../img/our-solutions/circle-box-1.svg) 280px 0px/30% no-repeat;
+	}
+	
+	.info-card.img-left .image-box {
+		background: #ec8068 url(../img/our-solutions/circle-box-2.svg) 10px 0%/35% no-repeat;
+	}
 }
 
 /* --------
