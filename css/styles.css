@@ -1003,3 +1003,25 @@ Payments and collections section styles
     justify-content: center;
     min-height: 10rem;
 }
+/* --------
+Digital bank section styles
+	-------- */
+
+.digital-bank.hero-division {
+    border-bottom: 30px solid #bd67bf;
+}
+.digital-bank {
+    padding-bottom: 6em;
+    margin-bottom: 18%;
+}
+.digital-bank .frame-1 {
+    background-image: url("/img/digital-bank/frame-1.png");
+    height: 500px;
+    position: absolute;
+    background-size: contain;
+    max-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* top: 50%; */
+}
