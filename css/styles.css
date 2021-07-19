@@ -806,6 +806,8 @@ Why we? styles
 .why-we .background-gradient {
 	margin: 30px 0;
 	padding: 70px 0;
+	position: relative;
+	z-index: -1;
 }
 
 .why-we .background-gradient h2 {
@@ -842,13 +844,20 @@ Why we? styles
     position: absolute;
 }
 
-.why-we .references .amount span {
+.why-we .references .amount span.small-letters {
     font-size: 32.24px;
 }
 
 .why-we .references p.bold {
     margin-top: 15px;
     margin-left: 10px;
+}
+
+.why-we .why-we-circles {
+	background: url(../img/why-we-1.svg) 100% 55%/10% no-repeat,
+	url(../img/why-we-2.svg) 20% 15%/15% no-repeat,
+	url(../img/why-we-3.svg) 0% 60%/20% no-repeat, 
+	url(../img/why-we-4.svg) 115% -80px/40% no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -867,6 +876,20 @@ Why we? styles
 	.why-we .references .amount {
 		font-size: 74px;
 	}
+
+	.why-we .why-we-circles {
+		background: url(../img/why-we-2.svg) -10% 25%/20% no-repeat, 
+		url(../img/why-we-3.svg) 130% 25%/40% no-repeat;
+	}
+}
+
+@media (min-width: 769px) {
+	.why-we .why-we-circles {
+		background: url(../img/why-we-1.svg) 100% 55%/15% no-repeat,
+		url(../img/why-we-2.svg) 20% 15%/15% no-repeat,
+		url(../img/why-we-3.svg) 0% 60%/20% no-repeat, 
+		url(../img/why-we-4.svg) 115% -25%/40% no-repeat;
+	}
 }
 @media (max-width: 991px) {
 	.why-we .background-gradient h2 {
@@ -876,8 +899,23 @@ Why we? styles
 	.why-we .references .amount {
 		font-size: 74px;
 	}
+}
 
-
+@media (min-width: 1216px) {
+	.why-we .why-we-circles {
+		background: url(../img/why-we-1.svg) 100% 55%/10% no-repeat,
+		url(../img/why-we-2.svg) 20% 20%/10% no-repeat,
+		url(../img/why-we-3.svg) 5% 60%/15% no-repeat,
+		url(../img/why-we-4.svg) 110% -75px/30% no-repeat
+	}
+}
+@media (min-width: 1408px) {
+	.why-we .why-we-circles {
+		background: url(../img/why-we-1.svg) 100% 55%/8% no-repeat,
+		url(../img/why-we-2.svg) 20% 20%/8% no-repeat,
+		url(../img/why-we-3.svg) 5% 60%/12% no-repeat,
+		url(../img/why-we-4.svg) 90% -50px/20% no-repeat;
+	}
 }
 
 /* --------
