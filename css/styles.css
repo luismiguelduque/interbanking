@@ -801,12 +801,12 @@ Why we? styles
 	.why-we .background-gradient h2 {
 		font-size: 64px;
 	}
-	
+
 	.why-we .references .amount {
 		font-size: 74px;
 	}
 
-	
+
 }
 
 /* --------
@@ -1007,6 +1007,11 @@ Digital salary section styles
 .digital-salary.hero-division {
     border-bottom: 30px solid #74abd1;
 }
+
+.hero-division-green {
+    border-bottom: 30px solid #69bc8b;
+}
+
 .card.rb-card.is-pink {
     border-top: 30px solid #bd67bf;
 }
