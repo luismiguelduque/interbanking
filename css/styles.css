@@ -1372,6 +1372,14 @@ Digital bank section styles
     height: 250px;
 }
 
+.digital-bank-ellipse-3 {
+    background-image: url("/img/digital-bank/ellipse-3.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: 81%;
+    background-position-y: -15%;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .add-block {
     height: 300px;
     display: block;
