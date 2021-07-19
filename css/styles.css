@@ -1066,6 +1066,9 @@ footer .columns {
 /* --------
 About Us section styles
 	-------- */
+.video-section {
+	position: relative;
+}
 
 .ellipse-1 {
     position: absolute;
@@ -1083,7 +1086,6 @@ About Us section styles
     background-color: #130429;
     position: absolute;
     width: 100vw;
-    margin: 0 -2em;
     bottom: -10%;
     height: 40%;
     max-height: 30vh;
