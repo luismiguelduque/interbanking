@@ -1284,12 +1284,28 @@ Electronic billings tyles
 	/* --------
 Digital bank section styles
 	-------- */
+.digital-bank {
+	position: relative;
+}
+
+.digital-bank .screen {
+	height: 250px;
+}
+
+.add-block {
+	height: 300px;
+	display: block;
+}
 
 .digital-bank .screen::after {
-	content: url("../img/digital-bank/screen.png");
-	left: -15%;
-	position: relative;
-	top: 30%;
+	content: "";
+	background: url("../img/digital-bank/screen.png") center no-repeat;
+	position: absolute;
+	height: 550px;
+	display: block;
+	z-index: 999;
+	top: 200px;
+	width: 100%;
 }
 
 .digital-bank.hero-division {
