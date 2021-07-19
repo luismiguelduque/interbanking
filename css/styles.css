@@ -30,8 +30,14 @@
 .p-t-30 {
     padding-top: 30px !important;
 }
+.p-t-50 {
+    padding-top: 50px !important;
+}
 .p-b-30 {
     padding-bottom: 30px !important;
+}
+.p-b-50 {
+    padding-bottom: 50px !important;
 }
 .m-t-10 {
     margin-top: 10px !important;
@@ -126,19 +132,41 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
+
 .cards-plans:hover {
     border-radius: 20px;
     border: 3px solid #a333f5;
     color: #a333f5;
 }
 
-.cards-plans-small {
+.cards-plans .cards-plans-title {
+    margin: 15px;
+    padding: 15px;
     border-radius: 20px;
     border: 1px solid #79717136;
 }
-#card-initial:hover {
-    border-radius: 20px;
-    border: 3px solid #a333f5;
+
+.cards-plans .cards-plans-title p.title {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards-plans .card-content.items-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards-plans .card-content .icon-text:first-child, 
+.cards-plans .card-content .icon-text:nth-child(4) {
+    width: 40%;
+}
+
+.cards-plans .card-content .icon-text {
+    width: 30%;
+    text-align: left;
 }
 
 .borderless-table {
@@ -159,18 +187,40 @@ body {
     border: 1px solid #79717136;
 }
 
-#card-initial:hover {
-    border-radius: 20px;
-    border: 3px solid #a333f5;
-}
 
-#btn-card-initial:hover {
+.btn-card-initial:hover {
     border-color: #a333f5;
     color: #a333f5;
 }
 
 .body-table {
     color: #8b8888;
+    width: 100%;
+}
+
+.table.is-striped tbody tr td {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
+}
+.table.is-striped tbody tr:not(.is-selected):nth-child(2n) {
+    background-color: #F4F5F9;
+}
+
+@media (max-width: 767px) {
+    .fs-xs-30 {
+        font-size: 30px;
+    }
+
+    .cards-plans .card-content.items-list {
+        flex-direction: column;
+    }
+
+    .cards-plans .card-content .icon-text,
+    .cards-plans .card-content .icon-text:first-child,
+    .cards-plans .card-content .icon-text:nth-child(4) {
+        width: 100%;
+    }
 }
 
 #card-initial::before {
@@ -245,6 +295,11 @@ p {
 
 p.subtitle {
     font-size: 16px;
+    line-height: 143.4%;
+}
+
+p.is-small-text {
+    font-size: 12px;
     line-height: 143.4%;
 }
 
@@ -326,6 +381,11 @@ p.bold {
 
 .is-primary-bg {
     background: #5e26ce;
+}
+
+.p-x-40 {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .p-b-50 {
@@ -930,6 +990,7 @@ Faq section styles
 .active,
 .accordion:hover {
     background-color: #eee;
+    /*border: 2px solid #a333f5;*/
 }
 .panel {
     padding: 0 20px;
@@ -1055,8 +1116,8 @@ footer .columns {
 /* --------
 About Us section styles
 	-------- */
-.video-section {
-    position: relative;
+.is-relative {
+	position: relative;
 }
 
 .ellipse-1 {
@@ -1189,12 +1250,13 @@ Payments and collections section styles
 Electronic billings tyles
 	-------- */
 .card-icon.card {
-    margin-top: 40px;
+    margin-top: 80px;
     padding: 40px 20px 0;
     overflow: visible;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
     border-radius: 25px;
+    min-height: 240px;
 }
 
 .card-icon.card.plus-info::after {
