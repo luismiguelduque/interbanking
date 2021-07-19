@@ -449,13 +449,56 @@ p.bold {
 	width: 100%;
 }
 
+.pc-img {
+    background: url(../img/pc-home.png) 40% 90% no-repeat;
+	width: 100%;
+	height: 250px;
+	background-size: 380px auto;
+}
+
+@media (min-width: 560px) {
+	.pc-img {
+		background: url(../img/pc-home.png) 50% 200% no-repeat;
+		height: 370px;
+		background-size: 600px auto;
+	}
+
+	.circles-main{
+		background: url(../img/home-main-1.svg) 500% 100%/90% no-repeat,
+		url(../img/home-main-3.svg) 10% 45%/30%  no-repeat;
+		width: 100%;
+	}
+}
 @media (min-width: 769px) {
+	.pc-img {
+		background: url(../img/pc-home.png) 50px 200% no-repeat;
+		background-size: 450px auto;
+		height: 290px;
+	}
 	.circles-main{
 		background: url(../img/home-main-1.svg) 500% 80%/90% no-repeat,
 		url(../img/home-main-2.svg) 10% 85%/5% no-repeat,
-		url(../img/home-main-3.svg) 90% 5%/10%  no-repeat;
+		url(../img/home-main-3.svg) 93% 5%/10%  no-repeat;
 		width: 100%;
 	}	
+}
+@media (min-width: 992px) {
+	.pc-img {
+		background-size: 550px auto;
+		height: 350px;
+	}
+}
+@media (min-width: 1216px) {
+	.pc-img {
+		background-size: 700px auto;
+		height: 410px;
+	}
+}
+@media (min-width: 1408px) {
+	.pc-img {
+		background-size: 840px auto;
+		height: 470px;
+	}
 }
 
 /*----- Card main -----*/
