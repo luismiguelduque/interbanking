@@ -12,7 +12,7 @@ const OtherSolutionsSection = Vue.component("other-solutions-section", {
                         </div>
                         <div class="columns m-t-60">
                             <div class="column is-6">
-                                <div class="card rb-card single-card is-pink">
+                                <div v-bind:class="item1.class">
                                     <div class="card-content has-text-left">
                                         <h3 class="has-text-dark">{{ item1.text }}</h3>
                                         <a v-bind:href="item1.url" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
@@ -20,7 +20,7 @@ const OtherSolutionsSection = Vue.component("other-solutions-section", {
                                 </div>
                             </div>
                             <div class="column is-6">
-                                <div class="card rb-card single-card is-orange">
+                                <div v-bind:class="item2.class">
                                     <div class="card-content has-text-left">
                                         <h3 class="has-text-dark">{{ item2.text }}</h3>
                                         <a v-bind:href="item2.url" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
