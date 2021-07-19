@@ -197,11 +197,11 @@ body {
     width: 100%;
 }
 
-.table.is-striped tbody tr td {
+.table.is-striped tr td {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
-.table.is-striped tbody tr:not(.is-selected):nth-child(2n) {
+.table.is-striped tr:nth-child(2n) {
     background-color: #f4f5f9;
 }
 
