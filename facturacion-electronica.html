@@ -15,8 +15,8 @@
         <meta name="description" content="Facturación electrónica – Lográ mayor control de tus finanzas." />
         <meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital" />
         <title>Facturación electrónica</title>
-        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -27,7 +27,7 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div id="app">
-            <section class="hero is-fullheight is-light hero-division-green hero-division">
+            <section class="hero is-fullheight is-light hero-division-green hero-division electronic-billing-ellipse-1">
                 <header-section></header-section>
                 <div class="hero-body">
                     <div class="container">
@@ -37,7 +37,7 @@
                                 <h4>Soluciones de emisión, cobro y pago de facturas</h4>
                             </div>
                             <div class="column is-5 has-text-centered">
-                                <img class="" src="img/electronic-invoice.png" alt="La evolución de tu gestión financiera" />
+                                <img class="" src="img/electronic-billing/electronic-billing-1.png" alt="La evolución de tu gestión financiera" />
                             </div>
                         </div>
                     </div>
@@ -104,9 +104,10 @@
                 <section class="is-fe-difference-2 is-white"></section>
             </div>
 
-            <other-solutions-section 
-                :item1="{'text': 'Banca digital', 'url': './banca-digital.html', 'class': 'card rb-card single-card is-pink'}" 
-                :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html', 'class': 'card rb-card single-card is-orange'}">
+            <other-solutions-section
+                :item1="{'text': 'Banca digital', 'url': './banca-digital.html', 'class': 'card rb-card single-card is-pink'}"
+                :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html', 'class': 'card rb-card single-card is-orange'}"
+            >
             </other-solutions-section>
 
             <faq-section :items="items" page="otros"></faq-section>
@@ -183,7 +184,11 @@
         height: 26vh;
         top: -25vh;
     }
-
+    .electronic-billing-ellipse-1 {
+        background-image: url("/img/electronic-billing/ellipse-1.png"), url("/img/electronic-billing/ellipse-2.png");
+        background-position: 150% 90%, left bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
     @media (min-width: 560px) {
         .is-fe-difference-1 {
             height: 55vh;
@@ -192,15 +197,30 @@
             height: 16vh;
             top: -15vh;
         }
+        .electronic-billing-ellipse-1 {
+            background-image: url("/img/electronic-billing/ellipse-1.png"), url("/img/electronic-billing/ellipse-2.png");
+            background-position: 85% 75%, left bottom;
+            background-repeat: no-repeat, no-repeat;
+        }
     }
     @media (min-width: 769px) {
         .is-fe-difference-1 {
             height: 70vh;
         }
+        .electronic-billing-ellipse-1 {
+            background-image: url("/img/electronic-billing/ellipse-1.png"), url("/img/electronic-billing/ellipse-2.png");
+            background-position: 105% 55%, left bottom;
+            background-repeat: no-repeat, no-repeat;
+        }
     }
     @media (min-width: 992px) {
         .is-fe-difference-1 {
             height: 30vh;
+        }
+        .electronic-billing-ellipse-1 {
+            background-image: url("/img/electronic-billing/ellipse-1.png"), url("/img/electronic-billing/ellipse-2.png");
+            background-position: 85% 60%, left bottom;
+            background-repeat: no-repeat, no-repeat;
         }
     }
     @media (min-width: 1216px) {
