@@ -1,7 +1,7 @@
 const HeaderSection = Vue.component('header-section', {
     template: `
         <div class="hero-head">
-            <nav class="navbar is-white is-spaced" role="navigation" aria-label="main navigation">
+            <nav id="nav" class="navbar is-white is-spaced" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="./index.html">
@@ -53,5 +53,30 @@ const HeaderSection = Vue.component('header-section', {
                 </div>
             </nav>
         </div>
-    `
+    `,
+    /*
+    data:{
+        active: false
+    },
+    methods: {
+        toggleNavClass(){
+            if(this.active == false){
+              return 'nav'
+            } else {
+              return 'sticky-nav'
+            }
+    
+        }
+    },
+    mounted(){
+        window.document.onscroll = () => {
+            let navBar = document.getElementById('nav');
+            if(window.scrollY > navBar.offsetTop){
+                this.active = true;
+            } else {
+                this.active = false;
+            }
+        }
+    }
+    */
 });
