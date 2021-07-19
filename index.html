@@ -20,6 +20,7 @@
         <script src="./components/faq-section.js"></script>
         <script src="./components/footer-section.js"></script>
         <script src="./components/plans-section.js"></script>
+        <script src="./js/general.js"></script>
     </head>
 <body>
 	<div id="app">
@@ -315,7 +316,7 @@
 						<div class="column is-3-desktop is-one-third-tablet-only">
 							<div class="references">
 								<div class="amount">
-									+100<span>MM</span>
+									+<span id="satisfaction">100<span><span>MM</span>
 								</div>
 								<p class="bold">
 									nivel de satisfacción del cliente
@@ -325,7 +326,7 @@
 						<div class="column is-3-desktop is-one-third-tablet-only">
 							<div class="references line">
 								<div class="amount">
-									97%
+									<span id="transfers">97<span>%
 								</div>
 								<p class="bold">
 									de transferencias procesadas anualmente
@@ -335,7 +336,7 @@
 						<div class="column is-3-desktop is-one-third-tablet-only">
 							<div class="references line">
 								<div class="amount">
-									30
+									<span id="years">30<span></span>
 								</div>
 								<p class="bold">
 									años de experiencia en el sistema financiero argentino
@@ -501,6 +502,11 @@
                     `<div class="banks-slide">Slide item 03</div>`,
                 ],
             }
+        },
+        mounted(){
+            animateValue("satisfaction", 0, 100, 4000);
+            animateValue("transfers", 0, 97, 4000);
+            animateValue("years", 0, 30, 4000);
         }
     });
 </script>
