@@ -1,6 +1,6 @@
 const FaqSection = Vue.component('faq-section', {
     template: `
-        <section class="hero is-light">
+        <section class="hero is-light p-b-50 p-t-50">
             <br><br>
             <div v-if="page!='seguridad'" class="hero-body is-background-primary  p-b-30 ">
                 <div class="container has-text-centered">

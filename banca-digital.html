@@ -40,7 +40,11 @@
                 </div>
             </section>
 
-            <section class="hero is-halfheight">
+            <div class="is-relative">
+                <section class="is-bd-difference-1 is-white"></section>
+            </div>
+
+            <section class="hero is-halfheight is-light p-b-30">
                 <div class="hero-body">
                     <div class="container">
                         <div class="columns is-centered is-multiline">
@@ -61,14 +65,12 @@
                                     </span>
                                 </h3>
                             </div>
-                            
+
                             <div class="column m-t-30 is-8">
                                 <div class="card card-icon plus-info rb-card people-outline-pink">
                                     <div class="card-content has-text-left multiple">
                                         <div class="title">
-                                            <h3 class="has-text-dark">
-                                                Ampliá el control
-                                            </h3>
+                                            <h3 class="has-text-dark">Ampliá el control</h3>
                                             <p class="is-size-6 bold is-pink">Jerarquías</p>
                                         </div>
                                         <div class="description">
@@ -86,9 +88,7 @@
                                 <div class="card card-icon plus-info rb-card calendar-outline-pink">
                                     <div class="card-content has-text-left multiple">
                                         <div class="title">
-                                            <h3 class="has-text-dark">
-                                                Transferencias electrónicas
-                                            </h3>
+                                            <h3 class="has-text-dark">Transferencias electrónicas</h3>
                                             <p class="is-size-6 bold is-pink">Información financiera</p>
                                         </div>
                                         <div class="description">
@@ -99,19 +99,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column m-t-30 is-5">
+                            <div class="column m-t-60 is-5">
                                 <div class="card card-icon rb-card credit-card-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Transferencias diferidas</p>
-                                        <small>Programá transferencias hasta 180 días.</small>                                    
+                                        <small>Programá transferencias hasta 180 días.</small>
                                     </div>
                                 </div>
                             </div>
-                            <div class="column m-t-30 is-5">
+                            <div class="column m-t-60 is-5">
                                 <div class="card card-icon rb-card code-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Integración</p>
-                                        <small>Integrá nuestra plataforma a tu sistema de gestión contable.</small>                                    
+                                        <small>Integrá nuestra plataforma a tu sistema de gestión contable.</small>
                                     </div>
                                 </div>
                             </div>
@@ -119,12 +119,20 @@
                     </div>
                 </div>
             </section>
+            <div class="is-relative">
+                <section class="is-bd-difference-2 is-white"></section>
+            </div>
+
+            <div class="is-relative">
+                <section class="is-bd-difference-3 is-white"></section>
+            </div>
+
             <section class="hero is-halfheight is-white">
                 <div class="hero-body">
                     <div class="container">
-                        <div class="columns m-t-30 is-vcentered">
+                        <div class="columns m-t-60 is-vcentered">
                             <div class="column is-5">
-                                <img class="" src="./img/digital-bank/frame-2.png" alt="Sumate al Echeq" />
+                                <img class="" src="./img/digital-bank/digital-bank-1.png" alt="Sumate al Echeq" />
                             </div>
                             <div class="column is-5 is-offset-1">
                                 <h3 class="has-text-dark">
@@ -148,25 +156,26 @@
                                     <span class="is-size-3 is-block">Agilizá procesos de pagos y cobranzas</span>
                                 </h3>
 
-                                <p class="is-size-6 ">Automatizá e integrá procesos internos a través de un canal seguro.</p>
+                                <p class="is-size-6">Automatizá e integrá procesos internos a través de un canal seguro.</p>
                             </div>
                             <div class="column is-5 is-offset-1">
-                                <img class="" src="./img/digital-bank/frame-3.png" alt="Agilizá procesos de pagos y cobranzas" />
+                                <img class="" src="./img/digital-bank/digital-bank-2.png" alt="Agilizá procesos de pagos y cobranzas" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <other-solutions-section 
-                :item1="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html'}"
-                :item2="{'text': 'Recibo de sueldo digital', 'url': './recibo-de-sueldo-digital.html'}"
-            > </other-solutions-section>
+            <other-solutions-section
+                :item1="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html', 'class': 'card rb-card single-card is-orange'}"
+                :item2="{'text': 'Recibo de sueldo digital', 'url': './recibo-de-sueldo-digital.html', 'class': 'card rb-card single-card is-blue'}"
+            >
+            </other-solutions-section>
 
             <faq-section :items="items" page="otros"></faq-section>
 
             <plans-section></plans-section>
-            
+
             <footer-section></footer-section>
         </div>
     </body>
@@ -196,7 +205,7 @@
                                 Atención Integral al Cliente se encuentra a disposición los días hábiles de 7 a 20 hs o
                                 haciendo click en el link de contacto de nuestro sitio Web.<br><br>
                                 Si no sos cliente y tenes consultas sobre el servicio, ingresá al link de contacto de nuestro
-                                sitio Web y envianos tu consulta a través del formulario de contacto.`
+                                sitio Web y envianos tu consulta a través del formulario de contacto.`,
                         },
                         {
                             title: "¿En qué horario puedo realizar los pagos?",
@@ -212,3 +221,66 @@
         });
     </script>
 </html>
+
+<style>
+    .is-bd-difference-1 {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        height: 130vh;
+        top: 0vh;
+    }
+    .is-bd-difference-2 {
+        position: absolute;
+        height: 50vh;
+        width: 100vw;
+        top: -145vh;
+    }
+    .is-bd-difference-3 {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        height: 26vh;
+        top: -25vh;
+    }
+
+    @media (min-width: 560px) {
+        .is-bd-difference-1 {
+            height: 65vh;
+        }
+        .is-bd-difference-2 {
+            height: 35vh;
+            top: -95vh;
+        }
+        .is-bd-difference-3 {
+            height: 16vh;
+            top: -15vh;
+        }
+    }
+    @media (min-width: 769px) {
+        .is-bd-difference-1 {
+            height: 70vh;
+        }
+        .is-bd-difference-3 {
+            display: none;
+        }
+    }
+    @media (min-width: 992px) {
+        .is-bd-difference-1 {
+            height: 55vh;
+        }
+        .is-bd-difference-2 {
+            height: 30vh;
+            top: -75vh;
+        }
+    }
+    @media (min-width: 1216px) {
+        .is-bd-difference-1 {
+            height: 75vh;
+        }
+        .is-bd-difference-2 {
+            height: 35vh;
+            top: -55vh;
+        }
+    }
+</style>

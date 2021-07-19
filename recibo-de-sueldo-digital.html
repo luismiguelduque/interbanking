@@ -25,12 +25,16 @@
                                 <h4>Ofrecé a tus empleados un portal digital para que visualicen y firmen sus recibos de sueldo</h4>
                             </div>
                             <div class="column is-5 has-text-centered">
-                                <img class="" src="img/our-solutions/recibo sueldoRecurso 6.png" alt="La evolución de tu gestión financiera" />
+                                <img class="" src="img/payments-and-collection/payment-collection-1.png" alt="La evolución de tu gestión financiera" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <div class="is-relative">
+                <section class="is-rdsd-difference-1 is-white"></section>
+            </div>
 
             <section class="hero is-halfheight is-light">
                 <div class="hero-body">
@@ -48,7 +52,10 @@
                                 <div class="card card-icon rb-card copy-blue">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-4">Recibos online</p>
-                                        <p class="is-size-6">Cada empleado busca y firma el suyo con todas las medidas de seguridad.<br> Así de simple. Así de confidencial.</p>                   
+                                        <p class="is-size-6">
+                                            Cada empleado busca y firma el suyo con todas las medidas de seguridad.<br />
+                                            Así de simple. Así de confidencial.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +63,10 @@
                                 <div class="card card-icon rb-card edit-blue">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-4">Firmas 24/7</p>
-                                        <p class="is-size-6">Tus empleados ahora van a poder visualizar y firmar online sus recibos de sueldo 24/7.<br> Es más práctico, más seguro, y más eficiente.</p>                   
+                                        <p class="is-size-6">
+                                            Tus empleados ahora van a poder visualizar y firmar online sus recibos de sueldo 24/7.<br />
+                                            Es más práctico, más seguro, y más eficiente.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +76,7 @@
                                 <div class="card card-icon rb-card archive-blue">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-4">Trazabilidad</p>
-                                        <p class="is-size-6">Seguimiento detallado de las recibos electrónicos.</p>                   
+                                        <p class="is-size-6">Seguimiento detallado de las recibos electrónicos.</p>
                                     </div>
                                 </div>
                             </div>
@@ -75,9 +85,13 @@
                 </div>
             </section>
 
-            <other-solutions-section 
-                :item1="{'text': 'Banca digital', 'url': './banca-digital.html'}"
-                :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html'}"
+            <div class="is-relative">
+                <section class="is-rdsd-difference-2 is-white"></section>
+            </div>
+
+            <<other-solutions-section 
+                :item1="{'text': 'Banca digital', 'url': './banca-digital.html', 'class': 'card rb-card single-card is-pink'}"
+                :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html', 'class': 'card rb-card single-card is-orange'}"
             > </other-solutions-section>
 
             <faq-section :items="items" page="otros"></faq-section>
@@ -113,11 +127,11 @@
                                 Atención Integral al Cliente se encuentra a disposición los días hábiles de 7 a 20 hs o
                                 haciendo click en el link de contacto de nuestro sitio Web.<br><br>
                                 Si no sos cliente y tenes consultas sobre el servicio, ingresá al link de contacto de nuestro
-                                sitio Web y envianos tu consulta a través del formulario de contacto.`
+                                sitio Web y envianos tu consulta a través del formulario de contacto.`,
                         },
                         {
                             title: "¿Cómo hago si un empleado bloquea u olvida su usuario y claves de acceso al Recibo de Sueldo?",
-                            content:  `Si el empleado ya es usuario registrado en Interbanking, el mismo puede autogestionarse
+                            content: `Si el empleado ya es usuario registrado en Interbanking, el mismo puede autogestionarse
                                 realizando los siguientes pasos:<br>
                                 • Ingresar por &#39;OPERAR&#39; con su Nacionalidad y CUIL. Luego presiona &#39;Aceptar&#39;.<br>
                                 • Hacer click en el botón &#39;GESTIÓN DE CLAVES&#39; y luego la opción &#39;Generar usuario y clave&#39;.<br>
@@ -129,7 +143,7 @@
                                 un nuevo usuario y claves. Para ello debe ingresar a www.interbanking.com.ar con su
                                 usuario y clave accediendo por la opción Documentos &gt; Recibo de Sueldo Digital &gt;
                                 Empleados &gt; Buscar, busque el empleado y presione el botón de más opciones &gt;
-                                Generación de Claves.`
+                                Generación de Claves.`,
                         },
                     ],
                 };
@@ -137,3 +151,50 @@
         });
     </script>
 </html>
+
+<style>
+    .is-rdsd-difference-1 {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        height: 80vh;
+        top: 0vh;
+    }
+    .is-rdsd-difference-2 {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        height: 26vh;
+        top: -25vh;
+    }
+
+    @media (min-width: 560px) {
+        .is-rdsd-difference-1 {
+            height: 55vh;
+        }
+        .is-rdsd-difference-2 {
+            height: 16vh;
+            top: -15vh;
+        }
+    }
+    @media (min-width: 769px) {
+        .is-rdsd-difference-1 {
+            height: 70vh;
+        }
+    }
+    @media (min-width: 992px) {
+        .is-rdsd-difference-1 {
+            height: 30vh;
+        }
+    }
+    @media (min-width: 1216px) {
+        .is-rdsd-difference-1 {
+            height: 45vh;
+        }
+
+        .is-rdsd-difference-2 {
+            height: 16vh;
+            top: -15vh;
+        }
+    }
+</style>
