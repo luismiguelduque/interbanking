@@ -360,7 +360,7 @@ p.bold {
 		background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
 	}
 
-	.hero-head .navbar-menu.is-active .navbar-end, .hero-head .navbar-menu.is-active .navbar-end .navbar-item a, 
+	.hero-head .navbar-menu.is-active .navbar-end, .hero-head .navbar-menu.is-active .navbar-end .navbar-item a,
 	.hero-head .navbar-menu.is-active .navbar-end, .hero-head .navbar-menu.is-active .navbar-end a {
 		text-align: right;
 		color: #fff !important;
@@ -384,7 +384,7 @@ p.bold {
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.hero-head .navbar-menu.is-active .navbar-buttons .navbar-item {
 		width: auto;
 		text-align: right;
@@ -858,6 +858,11 @@ Digital salary section styles
 .hero-division {
     border-bottom: 30px solid #74abd1;
 }
+
+.hero-division-green {
+    border-bottom: 30px solid #69bc8b;
+}
+
 .card.rb-card.is-pink {
     border-top: 30px solid #bd67bf;
 }
