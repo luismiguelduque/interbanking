@@ -159,7 +159,7 @@ body {
     flex-wrap: wrap;
 }
 
-.cards-plans .card-content .icon-text:first-child, 
+.cards-plans .card-content .icon-text:first-child,
 .cards-plans .card-content .icon-text:nth-child(4) {
     width: 40%;
 }
@@ -187,7 +187,6 @@ body {
     border: 1px solid #79717136;
 }
 
-
 .btn-card-initial:hover {
     border-color: #a333f5;
     color: #a333f5;
@@ -201,10 +200,9 @@ body {
 .table.is-striped tbody tr td {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-
 }
 .table.is-striped tbody tr:not(.is-selected):nth-child(2n) {
-    background-color: #F4F5F9;
+    background-color: #f4f5f9;
 }
 
 @media (max-width: 767px) {
@@ -398,6 +396,10 @@ p.bold {
 
 .is-white {
     background-color: #fff !important;
+}
+
+.is-grey {
+    background: #f5f5f5 !important;
 }
 
 .is-green {
@@ -1117,7 +1119,7 @@ footer .columns {
 About Us section styles
 	-------- */
 .is-relative {
-	position: relative;
+    position: relative;
 }
 
 .ellipse-1 {
