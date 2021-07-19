@@ -873,23 +873,24 @@ Why we? styles
 Faq section styles
  -------- */
 .accordion {
-    background-color: #eee;
+    background-color: #fff;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 25px 20px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
+    font-size: 14px;
     transition: 0.4s;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 .active,
 .accordion:hover {
-    background-color: #ccc;
+    background-color: #eee;
 }
 .panel {
-    padding: 0 18px;
+    padding: 0 20px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -898,14 +899,17 @@ Faq section styles
     margin-bottom: 30px;
 }
 .accordion:after {
-    content: "\02795";
+    content: "\2228";
     font-size: 13px;
-    color: #777;
     float: right;
     margin-left: 5px;
+    color: #000;
+    font-weight: 500;
 }
 .active:after {
-    content: "\2796";
+    content: "\2227";
+    color: #000;
+    font-weight: 500;
 }
 
 /* --------
