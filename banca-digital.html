@@ -8,15 +8,15 @@
         <meta name="description" content="Banca digital – Todos tus bancos en una sola plataforma." />
         <meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital" />
         <title>Banca digital</title>
-        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
     <body>
         <div id="app">
-            <section class="hero is-halfheight is-light digital-bank hero-division">
+            <section class="hero is-halfheight is-light digital-bank hero-division digital-bank-ellipse-1">
                 <header-section></header-section>
                 <div class="hero-body digital-bank">
                     <div class="container">
@@ -246,6 +246,11 @@
         top: -25vh;
     }
 
+    .digital-bank-ellipse-1,
+    .digital-bank-ellipse-3 {
+        background-image: none;
+    }
+
     @media (min-width: 560px) {
         .is-bd-difference-1 {
             height: 65vh;
@@ -274,6 +279,19 @@
         .is-bd-difference-2 {
             height: 30vh;
             top: -75vh;
+        }
+        .digital-bank-ellipse-1 {
+            background-image: url("/img/digital-bank/ellipse-1.png"), url("/img/digital-bank/ellipse-2.png");
+            background-position: right center, left center;
+            background-repeat: no-repeat, no-repeat;
+        }
+
+        .digital-bank-ellipse-3 {
+            background-image: url("/img/digital-bank/ellipse-3.png") !important;
+            background-repeat: no-repeat;
+            background-position-x: 81%;
+            background-position-y: -15%;
+            background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
         }
     }
     @media (min-width: 1216px) {
