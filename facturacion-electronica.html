@@ -5,20 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <meta name="author" content="AISA" />
-        <meta name="description" content="Todas las soluciones bancarias para tu negocio en una misma plataforma" />
+        <meta name="description" content="Facturación electrónica – Lográ mayor control de tus finanzas." />
         <meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital" />
         <title>Facturación electrónica</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <script src="https://kit.fontawesome.com/1cc1503c6a.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue-bulma-accordion@0.5.2/dist/main.min.js"></script>
-        <script src="./components/header-section.js"></script>
-        <script src="./components/faq-section.js"></script>
-        <script src="./components/footer-section.js"></script>
-        <script src="./components/plans-section.js"></script>
-        <script src="./components/other-solutions-section.js"></script>
     </head>
     <body>
         <div id="app">
@@ -100,47 +92,55 @@
             <footer-section></footer-section>
         </div>
     </body>
+    <script src="https://kit.fontawesome.com/1cc1503c6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-bulma-accordion@0.5.2/dist/main.min.js"></script>
+    <script src="./components/header-section.js"></script>
+    <script src="./components/faq-section.js"></script>
+    <script src="./components/footer-section.js"></script>
+    <script src="./components/plans-section.js"></script>
+    <script src="./components/other-solutions-section.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            components: {
+                HeaderSection,
+                FaqSection,
+                FooterSection,
+                PlansSection,
+                OtherSolutionsSection,
+            },
+            data() {
+                return {
+                    items: [
+                        {
+                            title: "Ante consultas, ¿Cómo me comunico?",
+                            content: `Si ya sos cliente, y sos un operador registrado en la plataforma, nuestro Centro de
+                                Atención Integral al Cliente se encuentra a disposición los días hábiles de 7 a 20 hs o
+                                haciendo click en el link de contacto de nuestro sitio Web.<br><br>
+                                Si no sos cliente y tenes consultas sobre el servicio, ingresá al link de contacto de nuestro
+                                sitio Web y envianos tu consulta a través del formulario de contacto.`
+                        },
+                        {
+                            title: "¿Cuál es el horario en el que puedo emitir mis facturas?",
+                            content:`Contamos con horario 7X24.<br><br>
+
+                                ● <b>¿Cómo reciben mis clientes los comprobantes emitidos?</b><br>
+                                ● Si el receptor ya es cliente de Interbanking con algún servicio de Banca Electrónica
+                                deberá ingresar a www.interbanking.com.ar con cuil, nacionalidad, usuario clave e
+                                ingresar a la opción <b>Facturas&gt; facturas disponibles &gt; generar consulta</b><br><br>
+
+                                ● Si el receptor ya es cliente del servicio Interfacturas en Interbanking deberá
+                                ingresar por www.interbanking.com.ar &gt; <b>Mas Sitios&gt; INTERFACTURAS</b> completar
+                                cuil, nacionalidad, usuario y clave e ingresar a la opción <b>Facturas disponibles</b><br><br>
+
+                                ● Si no es cliente de Interbanking pero recibió un mail del emisor de la FACTURA,
+                                deberá ingresar a www.interbanking.com.ar <b>MAS SITIOS &gt; VISUALIZACION CON
+                                CLAVE</b> y completar los datos solicitados (dicha clave la asigna el emisor)`
+                        },
+                    ],
+                };
+            },
+        });
+    </script>
 </html>
-<script>
-    new Vue({
-        el: "#app",
-        components: {
-            HeaderSection,
-            FaqSection,
-            FooterSection,
-            PlansSection,
-            OtherSolutionsSection,
-        },
-        data() {
-            return {
-                items: [
-                    {
-                        title: "Ante consultas, ¿Cómo me comunico?",
-                        content: `Si ya sos cliente, y sos un operador registrado en la plataforma, nuestro Centro de
-                            Atención Integral al Cliente se encuentra a disposición los días hábiles de 7 a 20 hs o
-                            haciendo click en el link de contacto de nuestro sitio Web.<br><br>
-                            Si no sos cliente y tenes consultas sobre el servicio, ingresá al link de contacto de nuestro
-                            sitio Web y envianos tu consulta a través del formulario de contacto.`
-                    },
-                    {
-                        title: "¿Cuál es el horario en el que puedo emitir mis facturas?",
-                        content:`Contamos con horario 7X24.<br><br>
-
-                            ● <b>¿Cómo reciben mis clientes los comprobantes emitidos?</b><br>
-                            ● Si el receptor ya es cliente de Interbanking con algún servicio de Banca Electrónica
-                            deberá ingresar a www.interbanking.com.ar con cuil, nacionalidad, usuario clave e
-                            ingresar a la opción <b>Facturas&gt; facturas disponibles &gt; generar consulta</b><br><br>
-
-                            ● Si el receptor ya es cliente del servicio Interfacturas en Interbanking deberá
-                            ingresar por www.interbanking.com.ar &gt; <b>Mas Sitios&gt; INTERFACTURAS</b> completar
-                            cuil, nacionalidad, usuario y clave e ingresar a la opción <b>Facturas disponibles</b><br><br>
-
-                            ● Si no es cliente de Interbanking pero recibió un mail del emisor de la FACTURA,
-                            deberá ingresar a www.interbanking.com.ar <b>MAS SITIOS &gt; VISUALIZACION CON
-                            CLAVE</b> y completar los datos solicitados (dicha clave la asigna el emisor)`
-                    },
-                ],
-            };
-        },
-    });
-</script>
