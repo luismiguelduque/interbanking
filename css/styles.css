@@ -977,11 +977,11 @@ Why we? styles
 All banks section styles
  -------- */
 
- .all-banks h2{
+.all-banks h2 {
     text-transform: none;
     font-size: 22px;
     margin-bottom: 10px !important;
- }
+}
 
 /* --------
 Faq section styles
@@ -1372,6 +1372,14 @@ Digital bank section styles
     height: 250px;
 }
 
+.digital-bank-ellipse-3 {
+    background-image: url("/img/digital-bank/ellipse-3.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: 81%;
+    background-position-y: -15%;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .add-block {
     height: 300px;
     display: block;
@@ -1386,6 +1394,7 @@ Digital bank section styles
     z-index: 999;
     top: 200px;
     width: 100%;
+    background-size: contain;
 }
 
 .digital-bank.hero-division {
@@ -1456,3 +1465,13 @@ a:hover {
     background-color:  #ccd6dd;
 }
 */
+
+@media (max-width: 768px) {
+    .card-icon.card .card-content.multiple {
+        display: block;
+    }
+    .card-icon.card .card-content .title,
+    .card-icon.card .card-content .description {
+        width: 100% !important;
+    }
+}
