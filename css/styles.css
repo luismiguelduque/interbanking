@@ -1112,3 +1112,7 @@ Digital bank section styles
     width: 100%;
     /* top: 50%; */
 }
+
+.bank-img{
+    height: 70px;
+}
