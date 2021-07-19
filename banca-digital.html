@@ -44,7 +44,7 @@
                 <section class="is-bd-difference-1 is-white"></section>
             </div>
 
-            <section class="hero is-halfheight is-light">
+            <section class="hero is-halfheight is-light p-b-30">
                 <div class="hero-body">
                     <div class="container">
                         <div class="columns is-centered is-multiline">
@@ -99,7 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column m-t-30 is-5">
+                            <div class="column m-t-60 is-5">
                                 <div class="card card-icon rb-card credit-card-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Transferencias diferidas</p>
@@ -107,7 +107,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column m-t-30 is-5">
+                            <div class="column m-t-60 is-5">
                                 <div class="card card-icon rb-card code-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Integración</p>
@@ -130,7 +130,7 @@
             <section class="hero is-halfheight is-white">
                 <div class="hero-body">
                     <div class="container">
-                        <div class="columns m-t-30 is-vcentered">
+                        <div class="columns m-t-60 is-vcentered">
                             <div class="column is-5">
                                 <img class="" src="./img/digital-bank/digital-bank-1.png" alt="Sumate al Echeq" />
                             </div>
@@ -166,10 +166,11 @@
                 </div>
             </section>
 
-            <other-solutions-section 
+            <other-solutions-section
                 :item1="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html', 'class': 'card rb-card single-card is-orange'}"
                 :item2="{'text': 'Recibo de sueldo digital', 'url': './recibo-de-sueldo-digital.html', 'class': 'card rb-card single-card is-blue'}"
-            > </other-solutions-section>
+            >
+            </other-solutions-section>
 
             <faq-section :items="items" page="otros"></faq-section>
 
@@ -231,9 +232,9 @@
     }
     .is-bd-difference-2 {
         position: absolute;
-        height: 45vh;
+        height: 50vh;
         width: 100vw;
-        top: -112vh;
+        top: -145vh;
     }
     .is-bd-difference-3 {
         position: absolute;
@@ -248,8 +249,8 @@
             height: 65vh;
         }
         .is-bd-difference-2 {
-            height: 30vh;
-            top: -70vh;
+            height: 35vh;
+            top: -95vh;
         }
         .is-bd-difference-3 {
             height: 16vh;
@@ -260,6 +261,9 @@
         .is-bd-difference-1 {
             height: 70vh;
         }
+        .is-bd-difference-3 {
+            display: none;
+        }
     }
     @media (min-width: 992px) {
         .is-bd-difference-1 {
@@ -267,7 +271,7 @@
         }
         .is-bd-difference-2 {
             height: 30vh;
-            top: -65vh;
+            top: -75vh;
         }
     }
     @media (min-width: 1216px) {
@@ -275,14 +279,8 @@
             height: 75vh;
         }
         .is-bd-difference-2 {
-            height: 25vh;
-            width: 100vw;
-            top: -48vh;
-        }
-
-        .is-bd-difference-3 {
-            height: 16vh;
-            top: -15vh;
+            height: 35vh;
+            top: -55vh;
         }
     }
 </style>
