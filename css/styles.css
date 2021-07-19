@@ -188,8 +188,8 @@ body {
 }
 
 .btn-card-initial:hover {
-    border-color: #a333f5;
-    color: #a333f5;
+    border-color: #a333f5 !important;
+    color: #a333f5 !important;
 }
 
 .body-table {

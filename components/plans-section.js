@@ -146,7 +146,7 @@ const PlansSection = Vue.component("plans-section", {
                                 </tr>
                             </table>
                             <center>
-                                <a href="./planes.html" class="button is-outlined btn-card-initial color-primary">CONOCER MAS</a>
+                                <a href="./planes.html" class="button-outline is-primary btn-card-initial">CONOCER MAS</a>
                             </center>
                         </div>
                     </div>
@@ -231,7 +231,7 @@ const PlansSection = Vue.component("plans-section", {
                                 </tr>
                             </table>
                             <center>
-                                <a href="./planes.html" class="button is-outlined btn-card-initial color-primary">CONOCER MAS</a>
+                                <a href="./planes.html" class="button-outline is-primary btn-card-initial">CONOCER MAS</a>
                             </center>
                         </div>
                     </div>
@@ -316,7 +316,7 @@ const PlansSection = Vue.component("plans-section", {
                                 </tr>
                             </table>
                             <center>
-                                <a href="./planes.html" class="button is-outlined btn-card-initial color-primary">CONOCER MAS</a>
+                                <a href="./planes.html" class="button-outline is-primary btn-card-initial">CONOCER MAS</a>
                             </center>
                         </div>
                     </div>
