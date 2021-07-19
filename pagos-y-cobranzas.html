@@ -15,8 +15,8 @@
         <meta name="description" content="Pagos y Cobranzas – Resolvé todos tus pagos en un solo lugar. Ampliá tus canales de cobro." />
         <meta name="keywords" content="Interbanking, banca digital, pagos y cobranzas, facturación electrónica, recibo de sueldo gigital" />
         <title>Pagos y cobranzas</title>
-        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -27,7 +27,7 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div id="app">
-            <section class="hero is-fullheight is-light payments-and-collections hero-division">
+            <section class="hero is-fullheight is-light payments-and-collections hero-division payments-and-collections-ellipse-0">
                 <header-section></header-section>
                 <div class="hero-body">
                     <div class="container">
@@ -37,7 +37,7 @@
                                 <h4>Somos tu aliado para resolver todos tus pagos en un mismo lugar y para que puedas ampliar tus canales de cobro</h4>
                             </div>
                             <div class="column is-5 has-text-centered">
-                                <img class="" src="img/pagos_cobranza/pagos_cobranza_1.png" alt="La evolución de tu gestión financiera" />
+                                <img class="" src="img/payments-and-collection/payment-collection-2.png" alt="La evolución de tu gestión financiera" />
                             </div>
                         </div>
                     </div>
@@ -193,9 +193,10 @@
                 </div>
             </section>
 
-            <other-solutions-section 
-                :item1="{'text': 'Banca digital', 'url': './banca-digital.html', 'class': 'card rb-card single-card is-pink'}" 
-                :item2="{'text': 'Facturación electrónica', 'url': './facturacion-electronica.html', 'class': 'card rb-card single-card is-green'}">
+            <other-solutions-section
+                :item1="{'text': 'Banca digital', 'url': './banca-digital.html', 'class': 'card rb-card single-card is-pink'}"
+                :item2="{'text': 'Facturación electrónica', 'url': './facturacion-electronica.html', 'class': 'card rb-card single-card is-green'}"
+            >
             </other-solutions-section>
 
             <faq-section :items="items" page="otros"></faq-section>
@@ -263,7 +264,18 @@
         height: 70vh;
         top: -45vh;
     }
+    .payments-and-collections-ellipse-0 {
+        background-image: url("/img/payments-and-collection/ellipse-0.png");
+        background-position: 160% bottom;
+        background-repeat: no-repeat;
+    }
+
     @media (min-width: 560px) {
+        .payments-and-collections-ellipse-0 {
+            background-image: url("/img/payments-and-collection/ellipse-0.png"), url("/img/payments-and-collection/ellipse-00.png");
+            background-position: 90% 90%, left bottom;
+            background-repeat: no-repeat, no-repeat;
+        }
     }
     @media (min-width: 769px) {
     }
