@@ -977,11 +977,11 @@ Why we? styles
 All banks section styles
  -------- */
 
- .all-banks h2{
+.all-banks h2 {
     text-transform: none;
     font-size: 22px;
     margin-bottom: 10px !important;
- }
+}
 
 /* --------
 Faq section styles
@@ -1386,6 +1386,7 @@ Digital bank section styles
     z-index: 999;
     top: 200px;
     width: 100%;
+    background-size: contain;
 }
 
 .digital-bank.hero-division {
@@ -1455,3 +1456,13 @@ a:hover {
     background-color:  #ccd6dd;
 }
 */
+
+@media (max-width: 768px) {
+    .card-icon.card .card-content.multiple {
+        display: block;
+    }
+    .card-icon.card .card-content .title,
+    .card-icon.card .card-content .description {
+        width: 100% !important;
+    }
+}
