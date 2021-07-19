@@ -30,8 +30,14 @@
 .p-t-30 {
     padding-top: 30px !important;
 }
+.p-t-50 {
+    padding-top: 50px !important;
+}
 .p-b-30 {
     padding-bottom: 30px !important;
+}
+.p-b-50 {
+    padding-bottom: 50px !important;
 }
 .m-t-10 {
     margin-top: 10px !important;
@@ -984,6 +990,7 @@ Faq section styles
 .active,
 .accordion:hover {
     background-color: #eee;
+    /*border: 2px solid #a333f5;*/
 }
 .panel {
     padding: 0 20px;
@@ -1243,12 +1250,13 @@ Payments and collections section styles
 Electronic billings tyles
 	-------- */
 .card-icon.card {
-    margin-top: 40px;
+    margin-top: 80px;
     padding: 40px 20px 0;
     overflow: visible;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
     border-radius: 25px;
+    min-height: 240px;
 }
 
 .card-icon.card.plus-info::after {
