@@ -344,6 +344,10 @@ p.bold {
 .is-red {
     color: rgb(242, 53, 108);
 }
+.is-pink {
+    color: #BD67BF;
+}
+
 
 .background-gradient {
     background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
@@ -1198,6 +1202,10 @@ Electronic billings tyles
 		border-radius: 25px;
 	}
 	
+	.card-icon.card.plus-info::after {
+		top: -20%;
+	}
+
 	.card-icon.card::after {
 		content: "";
 		position: absolute;
@@ -1209,6 +1217,39 @@ Electronic billings tyles
 		border-radius: 25px;
 		background-color: #fff;
 		padding-top: 5px;
+	}
+
+	.card-icon.card .card-content {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.card-icon.card .card-content.multiple {
+		flex-direction: row;
+	}
+	.card-icon.card .card-content .title {
+		padding-top: 30px;
+		width: 50%;
+	}
+
+	.card-icon.card .card-content .description {
+		width: 50%;
+	}
+
+	.card-icon.card.people-outline-pink::after {
+		background: #fff url(../img/icons/people-outline-3.png) 50%/70% no-repeat;
+	}
+	
+	.card-icon.card.calendar-outline-pink::after {
+		background: #fff url(../img/icons/calendar-outline-3.png) 50%/70% no-repeat;
+	}
+	
+	.card-icon.card.credit-card-outline::after {
+		background: #fff url(../img/icons/credit-card-outline-3.png) 50%/70% no-repeat;
+	}
+	
+	.card-icon.card.code-outline::after {
+		background: #fff url(../img/icons/code-outline-3.png) 50%/70% no-repeat;
 	}
 
 	.card-icon.card.people-outline::after {
@@ -1231,23 +1272,15 @@ Electronic billings tyles
 Digital bank section styles
 	-------- */
 
+.digital-bank .screen::after {
+	content: url("../img/digital-bank/screen.png");
+	left: -15%;
+	position: relative;
+	top: 30%;
+}
+
 .digital-bank.hero-division {
     border-bottom: 30px solid #bd67bf;
-}
-.digital-bank {
-    padding-bottom: 6em;
-    margin-bottom: 18%;
-}
-.digital-bank .frame-1 {
-    background-image: url("/img/digital-bank/frame-1.png");
-    height: 500px;
-    position: absolute;
-    background-size: contain;
-    max-height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    /* top: 50%; */
 }
 
 .bank-img{
