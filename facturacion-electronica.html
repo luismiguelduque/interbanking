@@ -24,12 +24,16 @@
                                 <h4>Soluciones de emisión, cobro y pago de facturas</h4>
                             </div>
                             <div class="column is-5 has-text-centered">
-                                <img class="" src="img/our-solutions/facturacion-electronica.png" alt="La evolución de tu gestión financiera">
+                                <img class="" src="img/our-solutions/facturacion-electronica.png" alt="La evolución de tu gestión financiera" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <div class="is-relative">
+                <section class="is-fe-difference-1 is-white"></section>
+            </div>
 
             <section class="hero is-halfheight is-light">
                 <div class="hero-body">
@@ -39,7 +43,10 @@
                                 <h2>
                                     <span class="is-size-3 is-block">AUTOMATIZÁ ACCIONES DE FACTURACIÓN</span>
                                 </h2>
-                                <p class="is-size-6 p-t-30 has-text-weight-bold">y mejorá su monitoreo para mantener mayor control<br> de lo que está pasando en tus finanzas</p>
+                                <p class="is-size-6 p-t-30 has-text-weight-bold">
+                                    y mejorá su monitoreo para mantener mayor control<br />
+                                    de lo que está pasando en tus finanzas
+                                </p>
                             </div>
                         </div>
                         <div class="columns m-t-60 is-10 is-centered is-multiline">
@@ -47,7 +54,7 @@
                                 <div class="card card-icon rb-card people-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Para todos</p>
-                                        <small>37 tipos de comprobantes diferentes.</small>  
+                                        <small>37 tipos de comprobantes diferentes.</small>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +62,7 @@
                                 <div class="card card-icon rb-card pencil-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Personalizado</p>
-                                        <small>Customizá todos los documentos con la identidad de tu marca.</small>                                    
+                                        <small>Customizá todos los documentos con la identidad de tu marca.</small>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +70,7 @@
                                 <div class="card card-icon rb-card award-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Smart</p>
-                                        <small>Integración con tu sistema de gestión.</small>                                   
+                                        <small>Integración con tu sistema de gestión.</small>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +78,7 @@
                                 <div class="card card-icon rb-card archive-outline">
                                     <div class="card-content has-text-left">
                                         <p class="bold is-size-3">Trazabilidad</p>
-                                        <small>Seguimiento detallado de las facturas electrónicas.</small>                                    
+                                        <small>Seguimiento detallado de las facturas electrónicas.</small>
                                     </div>
                                 </div>
                             </div>
@@ -80,10 +87,12 @@
                 </div>
             </section>
 
-            <other-solutions-section 
-                :item1="{'text': 'Banca digital', 'url': './banca-digital.html'}"
-                :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html'}"
-            > </other-solutions-section>
+            <div class="is-relative">
+                <section class="is-fe-difference-2 is-white"></section>
+            </div>
+
+            <other-solutions-section :item1="{'text': 'Banca digital', 'url': './banca-digital.html'}" :item2="{'text': 'Pagos y cobranzas', 'url': './pagos-y-cobranzas.html'}">
+            </other-solutions-section>
 
             <faq-section :items="items" page="otros"></faq-section>
 
@@ -119,11 +128,11 @@
                                 Atención Integral al Cliente se encuentra a disposición los días hábiles de 7 a 20 hs o
                                 haciendo click en el link de contacto de nuestro sitio Web.<br><br>
                                 Si no sos cliente y tenes consultas sobre el servicio, ingresá al link de contacto de nuestro
-                                sitio Web y envianos tu consulta a través del formulario de contacto.`
+                                sitio Web y envianos tu consulta a través del formulario de contacto.`,
                         },
                         {
                             title: "¿Cuál es el horario en el que puedo emitir mis facturas?",
-                            content:`Contamos con horario 7X24.<br><br>
+                            content: `Contamos con horario 7X24.<br><br>
 
                                 ● <b>¿Cómo reciben mis clientes los comprobantes emitidos?</b><br>
                                 ● Si el receptor ya es cliente de Interbanking con algún servicio de Banca Electrónica
@@ -136,7 +145,7 @@
 
                                 ● Si no es cliente de Interbanking pero recibió un mail del emisor de la FACTURA,
                                 deberá ingresar a www.interbanking.com.ar <b>MAS SITIOS &gt; VISUALIZACION CON
-                                CLAVE</b> y completar los datos solicitados (dicha clave la asigna el emisor)`
+                                CLAVE</b> y completar los datos solicitados (dicha clave la asigna el emisor)`,
                         },
                     ],
                 };
@@ -144,3 +153,49 @@
         });
     </script>
 </html>
+<style>
+    .is-fe-difference-1 {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        height: 80vh;
+        top: 0vh;
+    }
+    .is-fe-difference-2 {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        height: 26vh;
+        top: -25vh;
+    }
+
+    @media (min-width: 560px) {
+        .is-fe-difference-1 {
+            height: 55vh;
+        }
+        .is-fe-difference-2 {
+            height: 16vh;
+            top: -15vh;
+        }
+    }
+    @media (min-width: 769px) {
+        .is-fe-difference-1 {
+            height: 70vh;
+        }
+    }
+    @media (min-width: 992px) {
+        .is-fe-difference-1 {
+            height: 30vh;
+        }
+    }
+    @media (min-width: 1216px) {
+        .is-fe-difference-1 {
+            height: 45vh;
+        }
+
+        .is-fe-difference-2 {
+            height: 16vh;
+            top: -15vh;
+        }
+    }
+</style>
