@@ -261,7 +261,6 @@ p.bold {
 .is-primary {
     color: #5e26ce !important;
 }
-
 .is-primary-gradient {
     color: #5e26ce;
     background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
@@ -345,73 +344,102 @@ p.bold {
 .is-red {
     color: rgb(242, 53, 108);
 }
+
+.background-gradient {
+    background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.is-orange {
+    color: #ec8068;
+}
+.is-page-title-resposive {
+    font-size: calc(40px + (57 - 40) * ((100vw - 300px) / (1600 - 300)));
+}
+.is-title-resposive {
+    font-size: calc(30px + (47 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.m-zero {
+	margin: 0;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
 /*----- Custom Navbar -----*/
 
-@media(max-width: 1023px) {
-	.hero-head {
-		position: fixed;
-		z-index: 999;
-		width: 100%;
-		height: 100vh;
-	}
-	.hero-head .navbar-menu.is-active {
-		display: block;
-		height: 100vh;
-		background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
-	}
+@media (max-width: 1023px) {
+    .hero-head {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+    }
+    .hero-head .navbar-menu.is-active {
+        display: block;
+        height: 100vh;
+        background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-end, .hero-head .navbar-menu.is-active .navbar-end .navbar-item a,
-	.hero-head .navbar-menu.is-active .navbar-end, .hero-head .navbar-menu.is-active .navbar-end a {
-		text-align: right;
-		color: #fff !important;
-	}
+    .hero-head .navbar-menu.is-active .navbar-end,
+    .hero-head .navbar-menu.is-active .navbar-end .navbar-item a,
+    .hero-head .navbar-menu.is-active .navbar-end,
+    .hero-head .navbar-menu.is-active .navbar-end a {
+        text-align: right;
+        color: #fff !important;
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-end, .hero-head .navbar-menu.is-active .navbar-end .navbar-item a.navbar-item:hover,
-	.hero-head .navbar-menu.is-active .navbar-end, .hero-head .navbar-menu.is-active .navbar-end a.navbar-item:hover {
-		color: #000 !important;
-	}
+    .hero-head .navbar-menu.is-active .navbar-end,
+    .hero-head .navbar-menu.is-active .navbar-end .navbar-item a.navbar-item:hover,
+    .hero-head .navbar-menu.is-active .navbar-end,
+    .hero-head .navbar-menu.is-active .navbar-end a.navbar-item:hover {
+        color: #000 !important;
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-end::after {
-		content: '';
-		width: 80%;
-		height: 1px;
-		background-color: #fff;
-		display: block;
-		margin: 10px 10%;
-	}
+    .hero-head .navbar-menu.is-active .navbar-end::after {
+        content: "";
+        width: 80%;
+        height: 1px;
+        background-color: #fff;
+        display: block;
+        margin: 10px 10%;
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-buttons {
-		display: flex;
-		flex-direction: column;
-	}
+    .hero-head .navbar-menu.is-active .navbar-buttons {
+        display: flex;
+        flex-direction: column;
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-buttons .navbar-item {
-		width: auto;
-		text-align: right;
-	}
+    .hero-head .navbar-menu.is-active .navbar-buttons .navbar-item {
+        width: auto;
+        text-align: right;
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-buttons .navbar-item a {
-		width: auto;
-		text-align: right;
-		background: transparent;
-		font-size: 16px;
-		padding: 0;
-		text-transform: capitalize;
-	}
+    .hero-head .navbar-menu.is-active .navbar-buttons .navbar-item a {
+        width: auto;
+        text-align: right;
+        background: transparent;
+        font-size: 16px;
+        padding: 0;
+        text-transform: capitalize;
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-buttons .navbar-item .button{
-		font-weight: bold;
-	}
+    .hero-head .navbar-menu.is-active .navbar-buttons .navbar-item .button {
+        font-weight: bold;
+    }
 
-	.hero-head .navbar-menu.is-active .navbar-buttons a {
-		color: #fff !important;
-	}
+    .hero-head .navbar-menu.is-active .navbar-buttons a {
+        color: #fff !important;
+    }
 }
 
 .navbar-buttons {
     display: flex;
 }
-
 
 /*----- Card main -----*/
 
@@ -540,18 +568,173 @@ p.bold {
 .card.rb-card.is-blue {
     border-top: 30px solid #74abd1;
 }
+
+@media (max-width: 991px) {
+    .info-card,
+    .info-card .card-content {
+        width: 100%;
+    }
+
+    .info-card.img-right,
+    .info-card.img-left {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    .info-card.img-right::after {
+        background-size: 200px 170px;
+        display: inline-block;
+        width: 200px;
+        height: 170px;
+        content: "";
+        background-image: url("../img/our-solutions/box1.png");
+        position: absolute;
+        top: -100px;
+        left: 0px;
+    }
+
+    .info-card.img-left::after {
+        background-size: 150px 200px;
+        display: inline-block;
+        width: 150px;
+        height: 200px;
+        content: "";
+        background-image: url("../img/our-solutions/box2.png");
+        position: absolute;
+        top: -120px;
+        left: 30px;
+    }
+
+    .info-card.img-left .card-content {
+        margin-left: 0;
+    }
+
+    .info-card.img-right .image-box,
+    .info-card.img-left .image-box {
+        top: -5%;
+        left: -30%;
+        z-index: -1;
+    }
+
+    .info-card.img-right .image-box::after,
+    .info-card.img-left .image-box::after {
+        content: "";
+    }
+}
+
+/* --------
+Testimony section styles
+ -------- */
+
+ .container-testimonials {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container-testimonials::after {
+    content: "";
+    width: 2px;
+    height: 500px;
+    background-color: #aab3b7;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+}
+
+.testimony.right {
+    position: relative;
+    top: 10%;
+}
+
+.testimony {
+    width: 50%;
+    display: block;
+    position: relative;
+    margin: 50px 0;
+	top: -40px;
+}
+
+.testimony .card {
+    max-width: 460px;
+	width: 390px;
+    height: 210px;
+    margin: auto;
+    padding: 40px 20px 0;
+    overflow: visible;
+	border: 1px solid #EEEEEE;
+	box-sizing: border-box;
+	border-radius: 25px;
+}
+
+.testimony .card::after {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #5e26ce;
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.testimony.left::after {
+    right: 5%;
+}
+
+.testimony.right::after {
+    left: 5%;
+}
+
+.testimony::after {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    color: #5e26ce;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    font-size: 0.5rem;
+}
+@media (max-width: 991px) {
+	.testimony {
+		width: 100%;
+		z-index: 1;
+		top: 0;
+		margin: 30px 0;
+	}
+
+	.testimony .card {
+		padding: 10px 10px;
+		width: auto;
+		height: auto;
+	}
+
+	.container-testimonials::after {
+		z-index: 0;
+		height: 950px;
+		left: 28%;
+	}
+
+	.testimony.left::after, .testimony.right::after {
+		content: "";
+	}
+}
 /* --------
 Why we? styles
  -------- */
 .why-we {
-    padding: 9rem 0;
+	padding: 9rem 0;
 }
-
 .why-we .background-gradient {
-    background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
-    width: 100%;
-    padding: 70px 0;
-    margin: 30px 0;
+	margin: 30px 0;
+	padding: 70px 0;
 }
 
 .why-we .background-gradient h2 {
@@ -597,81 +780,33 @@ Why we? styles
     margin-left: 10px;
 }
 
-/* --------
-Testimony section styles
- -------- */
-
-.container-testimonials {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0 0;
-    flex-wrap: wrap;
-    position: relative;
+@media (max-width: 768px) {
+	.why-we .references.line::before {
+		content: "";
+		width: 40%;
+		height: 2px;
+		background-color: #3b3b44;
+		display: block;
+		border-radius: 50%;
+		position: relative;
+		left: 30%;
+		right: 30%;
+		margin-bottom: 20px;
+	}
+	.why-we .references .amount {
+		font-size: 74px;
+	}
 }
+@media (max-width: 991px) {
+	.why-we .background-gradient h2 {
+		font-size: 64px;
+	}
 
-.container-testimonials::after {
-    content: "";
-    width: 2px;
-    height: 500px;
-    background-color: #aab3b7;
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    right: 50%;
-}
+	.why-we .references .amount {
+		font-size: 74px;
+	}
 
-.testimony.right {
-    position: relative;
-    top: 10%;
-}
 
-.testimony {
-    width: 50%;
-    display: block;
-    position: relative;
-    margin: 30px 0;
-}
-
-.testimony .card {
-    max-width: 460px;
-    height: 196px;
-    margin: auto;
-    padding: 40px 20px 0;
-    overflow: visible;
-}
-
-.testimony .card::after {
-    content: "\f10d";
-    font-family: "Font Awesome 5 Free";
-    color: #fff;
-    font-weight: bold;
-    position: absolute;
-    top: -15%;
-    left: 10%;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    background-color: #5e26ce;
-    width: 50px;
-    height: 50px;
-    padding-top: 5px;
-}
-
-.testimony.left::after {
-    right: 10%;
-}
-
-.testimony.right::after {
-    left: 10%;
-}
-
-.testimony::after {
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
-    color: #5e26ce;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    font-size: 0.5rem;
 }
 
 /* --------
@@ -796,6 +931,20 @@ footer .social-media a {
     display: inline-block;
     margin-right: 15px;
 }
+footer .columns {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    footer .mobile-screen {
+        margin-left: 30px;
+    }
+    footer .mobile-screen a,
+    footer .mobile-screen p {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+}
 
 /* --------
 About Us section styles
@@ -855,7 +1004,7 @@ About Us section styles
 Digital salary section styles
 	-------- */
 
-.hero-division {
+.digital-salary.hero-division {
     border-bottom: 30px solid #74abd1;
 }
 
@@ -868,4 +1017,81 @@ Digital salary section styles
 }
 .card.rb-card.is-orange {
     border-top: 30px solid #ec8068;
+}
+/* --------
+Payments and collections section styles
+	-------- */
+.payments-and-collections.hero-division {
+    border-bottom: 30px solid #ec8068;
+}
+.features-list-primary li:before {
+    content: "• ";
+    color: #a333f5;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+}
+
+.features-list-orange li:before {
+    content: "• ";
+    color: #ec8068;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+}
+.payments-and-collections-ellipse-1 {
+    background-image: url("/img/payments-and-collection/ellipse-1.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100%;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
+}
+.payments-and-collections-ellipse-2 {
+    background-image: url("/img/payments-and-collection/ellipse-2.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.payments-and-collections-ellipse-3 {
+    background-image: url("/img/payments-and-collection/ellipse-3.png") !important;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: calc(150px + (200 - 150) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.banks-slide {
+    align-items: center;
+    background-color: #666;
+    color: #999;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    min-height: 10rem;
+}
+/* --------
+Digital bank section styles
+	-------- */
+
+.digital-bank.hero-division {
+    border-bottom: 30px solid #bd67bf;
+}
+.digital-bank {
+    padding-bottom: 6em;
+    margin-bottom: 18%;
+}
+.digital-bank .frame-1 {
+    background-image: url("/img/digital-bank/frame-1.png");
+    height: 500px;
+    position: absolute;
+    background-size: contain;
+    max-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* top: 50%; */
 }

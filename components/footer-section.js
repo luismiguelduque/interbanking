@@ -1,12 +1,12 @@
 const FooterSection = Vue.component('footer-section', {
     template: `
         <footer>
-            <div class="columns is-multiline is-centered">
+            <div class="columns is-multiline is-centered mobile-screen">
                 <div class="column is-9">
                     <img src="img/logo-negativo.png" alt="Agencia de acceso a la información pública">
                 </div>
             </div>
-            <div class="columns is-multiline is-centered p-b-50">
+            <div class="columns is-multiline is-centered p-b-50 mobile-screen">
                 <div class="column is-3">
                     <a href="./seguridad.html">Seguridad</a>
                     <a href="./defensa-y-proteccion-al-consumidor.html">Defensa y Protección al consumidor</a>
