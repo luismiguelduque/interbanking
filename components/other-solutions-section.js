@@ -15,7 +15,7 @@ const OtherSolutionsSection = Vue.component("other-solutions-section", {
                                 <div v-bind:class="item1.class">
                                     <div class="card-content has-text-left">
                                         <h3 class="has-text-dark">{{ item1.text }}</h3>
-                                        <a v-bind:href="item1.url" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
+                                        <a v-bind:href="item1.url" class="button-link is-primary arrow" role="button"> Conocer más</a>
                                     </div>
                                 </div>
                             </div>
@@ -23,7 +23,7 @@ const OtherSolutionsSection = Vue.component("other-solutions-section", {
                                 <div v-bind:class="item2.class">
                                     <div class="card-content has-text-left">
                                         <h3 class="has-text-dark">{{ item2.text }}</h3>
-                                        <a v-bind:href="item2.url" class="is-link is-primary is-uppercase" role="button"> Conocer más</a>
+                                        <a v-bind:href="item2.url" class="button-link is-primary arrow" role="button"> Conocer más</a>
                                     </div>
                                 </div>
                             </div>

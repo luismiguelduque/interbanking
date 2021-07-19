@@ -45,7 +45,7 @@
                                             Centralizá la operatoria de todos tus bancos en nuestra plataforma y empezá a interbankear
                                             de una manera más inteligente. Las herramientas de Interbanking se integran a la gestión
                                             financiera y administrativa de tu empresa para que puedas ahorrar tiempo y liberar
-                                            esfuerzos de los equipos. 
+                                            esfuerzos de los equipos.
                                         </p>
                                         <p class="bold grey">
                                             Automatizá tareas, administrá permisos, utilizá una clave única y mucho más.
@@ -113,9 +113,9 @@
                                             Ordená tu gestión
                                         </p>
                                         <p class="grey">
-                                            Somos tu aliado en la eficientización de la gestión administrativa de tu negocio. 
-                                            Cumplí con todas tus obligaciones impositivas y de servicios en un mismo lugar, y 
-                                            optimizá tu gestión de cobros. 
+                                            Somos tu aliado en la eficientización de la gestión administrativa de tu negocio.
+                                            Cumplí con todas tus obligaciones impositivas y de servicios en un mismo lugar, y
+                                            optimizá tu gestión de cobros.
                                         </p>
                                         <p class="bold grey">
                                             Facilitá la conciliación y operá de manera eficiente.
@@ -184,7 +184,7 @@
                                             Eficientizá tu facturación.
                                         </p>
                                         <p class="grey">
-                                            Emití, monitoreá y visualizá facturas y otros comprobantes 
+                                            Emití, monitoreá y visualizá facturas y otros comprobantes
                                             de forma online cuando quieras. Ahorrá tiempo y costos.
                                         </p>
                                         <div class="buttons">
@@ -206,7 +206,7 @@
                                             Simple, ágil y seguro.
                                         </p>
                                         <p class="grey">
-                                            Simplificá toda la cadena de recibos de sueldos de tu empresa 
+                                            Simplificá toda la cadena de recibos de sueldos de tu empresa
                                             o emprendimiento y tomá el control del estado de cada recibo.
                                         </p>
                                         <div class="buttons">
@@ -249,7 +249,7 @@
                                             Ahora soy libre de operar cuando quiera sin depender de las horas de apertura y cierre.
                                         </p>
                                         <p class="grey">
-                                            <span class="is-primary">Interbanker Administrativa ·</span> Clara Sánchez 
+                                            <span class="is-primary">Interbanker Administrativa ·</span> Clara Sánchez
                                         </p>
                                     </div>
                                 </div>
@@ -348,36 +348,63 @@
                     </div>
                     <div class="columns is-centered">
                         <div class="column is-10">
-                            <div class="columns is-centered">
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/santander.png">
-                                </div>
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/banco-galicia.png">
-                                </div>
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/banco-ciudad.png">
-                                </div>
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/banco-naciom.png">
-                                </div>
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/bbva.png">
-                                </div>
-                            </div>
-                            <div class="columns is-centered">
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/macro.png">
-                                </div>
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/hsbc.png">
-                                </div>
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/banco-provincia.png">
-                                </div>
-                                <div class="column has-text-centered">
-                                    <img class="bank-img" src="./img/banks-icons/icbc.png">
-                                </div>
+                            <div id="app">
+                                <carousel v-bind:navigation-enabled="true"  v-bind:autoplay="true" v-bind:pagination-enabled="false" :per-page="1">
+                                  <slide>
+                                    <div class="columns is-centered">
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/santander.png">
+                                        </div>
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/banco-galicia.png">
+                                        </div>
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/banco-ciudad.png">
+                                        </div>
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/banco-naciom.png">
+                                        </div>
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/bbva.png">
+                                        </div>
+                                    </div>
+                                    <div class="columns is-centered">
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/macro.png">
+                                        </div>
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/hsbc.png">
+                                        </div>
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/banco-provincia.png">
+                                        </div>
+                                        <div class="column has-text-centered">
+                                            <img class="bank-img" src="./img/banks-icons/icbc.png">
+                                        </div>
+                                    </div>
+                                  </slide>
+                                  <slide>
+                                    Slide 2 Content
+                                  </slide>
+                                  <slide>
+                                    Slide 3 Content
+                                  </slide>
+                                  <slide>
+                                    Slide 4 Content
+                                  </slide>
+                                  <slide>
+                                    Slide 5 Content
+                                  </slide>
+                                  <slide>
+                                    Slide 6 Content
+                                  </slide>
+                                  <slide>
+                                    Slide 7 Content
+                                  </slide>
+                                  <slide>
+                                    Slide 8 Content
+                                  </slide>
+                                </carousel>
                             </div>
                         </div>
                     </div>
@@ -450,11 +477,11 @@
                     -->
                 </div>
             </section>
-            
+
             <plans-section></plans-section>
 
             <faq-section :items="items" page="otros"></faq-section>
-            
+
             <footer-section></footer-section>
 
         </div>
@@ -476,17 +503,19 @@
                 FaqSection,
                 FooterSection,
                 PlansSection,
-                VueCarousel
+               /* VueCarousel,*/
+                'carousel': VueCarousel.Carousel,
+                'slide': VueCarousel.Slide
             },
             data(){
                 return {
                     items: [
                         {
-                            'title': 'Extravié mi token ¿Qué debo hacer?', 
+                            'title': 'Extravié mi token ¿Qué debo hacer?',
                             'content': 'Comunicate con nuestro Centro de Atención al Cliente, seleccioná la opción “Denuncia” y te atenderemos a la brevedad.'
                         },
                         {
-                            'title': '¿Cómo recupero mis claves de acceso?', 
+                            'title': '¿Cómo recupero mis claves de acceso?',
                             'content': `<b>Recuperar solo la clave</b><br><br>
                                 • Ingresá por &#39;OPERAR&#39; con tu Nacionalidad y CUIL. Luego presione &#39;Aceptar&#39;.<br>
                                 • Presioná el botón &#39;GESTIÓN DE CLAVES&#39; y luego la opción &#39;Generar nueva clave<br>
@@ -513,5 +542,24 @@
             }
         });
     </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+<script src="https://cdn.rawgit.com/SSENSE/vue-carousel/6823411d/dist/vue-carousel.min.js"></script>
 </html>
+<style>
+    #app{
+        width:90%;
+        margin:auto;
+    }
+    .VueCarousel-slide {
+        height: 200px;
+        /* color: #FFF; */
+        /* background: #59ecff; */
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        /* border-right: 1px solid #FFF; */
+        box-sizing: border-box;
+        font-size: 12px;
+        text-align: center;
+    }
+</style>
