@@ -6,6 +6,9 @@
 .sub-section {
     margin-bottom: 60px;
 }
+.card {
+    z-index: 1;
+}
 .rb-card {
     border: none;
     border-radius: 4px;
@@ -183,7 +186,7 @@ body {
 }
 
 #card-plus::after {
-    content: "";
+    /* content: ""; */
     display: block;
     width: 204px;
     height: 210px;
@@ -345,9 +348,8 @@ p.bold {
     color: rgb(242, 53, 108);
 }
 .is-pink {
-    color: #BD67BF;
+    color: #bd67bf;
 }
-
 
 .background-gradient {
     background: linear-gradient(223.26deg, #5e26ce -11.85%, #a333f5 114.71%);
@@ -366,7 +368,7 @@ p.bold {
 }
 
 .m-zero {
-	margin: 0;
+    margin: 0;
 }
 @media (max-width: 768px) {
     h1 {
@@ -447,62 +449,58 @@ p.bold {
 
 /*------ Home main ------*/
 
-.circles-main{
-	background: url(../img/home-main-1.svg) 500% 100%/90% no-repeat,
-	url(../img/home-main-3.svg) 10% 65%/30%  no-repeat;
-	width: 100%;
+.circles-main {
+    background: url(../img/home-main-1.svg) 500% 100%/90% no-repeat, url(../img/home-main-3.svg) 10% 65%/30% no-repeat;
+    width: 100%;
 }
 
 .pc-img {
     background: url(../img/pc-home.png) 40% 90% no-repeat;
-	width: 100%;
-	height: 250px;
-	background-size: 380px auto;
+    width: 100%;
+    height: 250px;
+    background-size: 380px auto;
 }
 
 @media (min-width: 560px) {
-	.pc-img {
-		background: url(../img/pc-home.png) 50% 200% no-repeat;
-		height: 370px;
-		background-size: 600px auto;
-	}
+    .pc-img {
+        background: url(../img/pc-home.png) 50% 200% no-repeat;
+        height: 370px;
+        background-size: 600px auto;
+    }
 
-	.circles-main{
-		background: url(../img/home-main-1.svg) 500% 100%/90% no-repeat,
-		url(../img/home-main-3.svg) 10% 45%/30%  no-repeat;
-		width: 100%;
-	}
+    .circles-main {
+        background: url(../img/home-main-1.svg) 500% 100%/90% no-repeat, url(../img/home-main-3.svg) 10% 45%/30% no-repeat;
+        width: 100%;
+    }
 }
 @media (min-width: 769px) {
-	.pc-img {
-		background: url(../img/pc-home.png) 50px 200% no-repeat;
-		background-size: 450px auto;
-		height: 290px;
-	}
-	.circles-main{
-		background: url(../img/home-main-1.svg) 500% 80%/90% no-repeat,
-		url(../img/home-main-2.svg) 10% 85%/5% no-repeat,
-		url(../img/home-main-3.svg) 93% 5%/10%  no-repeat;
-		width: 100%;
-	}	
+    .pc-img {
+        background: url(../img/pc-home.png) 50px 200% no-repeat;
+        background-size: 450px auto;
+        height: 290px;
+    }
+    .circles-main {
+        background: url(../img/home-main-1.svg) 500% 80%/90% no-repeat, url(../img/home-main-2.svg) 10% 85%/5% no-repeat, url(../img/home-main-3.svg) 93% 5%/10% no-repeat;
+        width: 100%;
+    }
 }
 @media (min-width: 992px) {
-	.pc-img {
-		background-size: 550px auto;
-		height: 350px;
-	}
+    .pc-img {
+        background-size: 550px auto;
+        height: 350px;
+    }
 }
 @media (min-width: 1216px) {
-	.pc-img {
-		background-size: 700px auto;
-		height: 410px;
-	}
+    .pc-img {
+        background-size: 700px auto;
+        height: 410px;
+    }
 }
 @media (min-width: 1408px) {
-	.pc-img {
-		background-size: 840px auto;
-		height: 470px;
-	}
+    .pc-img {
+        background-size: 840px auto;
+        height: 470px;
+    }
 }
 
 /*----- Card main -----*/
@@ -683,24 +681,23 @@ p.bold {
     .info-card.img-left .image-box::after {
         content: "";
     }
-
 }
 
 @media (min-width: 992px) {
-	.info-card.img-right .image-box {
-		background: #bd67bf url(../img/our-solutions/circle-box-1.svg) 280px 0px/30% no-repeat;
-	}
-	
-	.info-card.img-left .image-box {
-		background: #ec8068 url(../img/our-solutions/circle-box-2.svg) 10px 0%/35% no-repeat;
-	}
+    .info-card.img-right .image-box {
+        background: #bd67bf url(../img/our-solutions/circle-box-1.svg) 280px 0px/30% no-repeat;
+    }
+
+    .info-card.img-left .image-box {
+        background: #ec8068 url(../img/our-solutions/circle-box-2.svg) 10px 0%/35% no-repeat;
+    }
 }
 
 /* --------
 Testimony section styles
  -------- */
 
- .container-testimonials {
+.container-testimonials {
     display: flex;
     flex-direction: row;
     margin: 50px 0 0;
@@ -729,19 +726,19 @@ Testimony section styles
     display: block;
     position: relative;
     margin: 50px 0;
-	top: -40px;
+    top: -40px;
 }
 
 .testimony .card {
     max-width: 460px;
-	width: 390px;
+    width: 390px;
     height: 210px;
     margin: auto;
     padding: 40px 20px 0;
     overflow: visible;
-	border: 1px solid #EEEEEE;
-	box-sizing: border-box;
-	border-radius: 25px;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    border-radius: 25px;
 }
 
 .testimony .card::after {
@@ -778,40 +775,41 @@ Testimony section styles
     font-size: 0.5rem;
 }
 @media (max-width: 991px) {
-	.testimony {
-		width: 100%;
-		z-index: 1;
-		top: 0;
-		margin: 30px 0;
-	}
+    .testimony {
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        margin: 30px 0;
+    }
 
-	.testimony .card {
-		padding: 10px 10px;
-		width: auto;
-		height: auto;
-	}
+    .testimony .card {
+        padding: 10px 10px;
+        width: auto;
+        height: auto;
+    }
 
-	.container-testimonials::after {
-		z-index: 0;
-		height: 950px;
-		left: 28%;
-	}
+    .container-testimonials::after {
+        z-index: 0;
+        height: 950px;
+        left: 28%;
+    }
 
-	.testimony.left::after, .testimony.right::after {
-		content: "";
-	}
+    .testimony.left::after,
+    .testimony.right::after {
+        content: "";
+    }
 }
 /* --------
 Why we? styles
  -------- */
 .why-we {
-	padding: 9rem 0;
+    padding: 9rem 0;
 }
 .why-we .background-gradient {
-	margin: 30px 0;
-	padding: 70px 0;
-	position: relative;
-	z-index: -1;
+    margin: 30px 0;
+    padding: 70px 0;
+    position: relative;
+    z-index: -1;
 }
 
 .why-we .background-gradient h2 {
@@ -858,68 +856,59 @@ Why we? styles
 }
 
 .why-we .why-we-circles {
-	background: url(../img/why-we-1.svg) 100% 55%/10% no-repeat,
-	url(../img/why-we-2.svg) 20% 15%/15% no-repeat,
-	url(../img/why-we-3.svg) 0% 60%/20% no-repeat, 
-	url(../img/why-we-4.svg) 115% -80px/40% no-repeat;
+    background: url(../img/why-we-1.svg) 100% 55%/10% no-repeat, url(../img/why-we-2.svg) 20% 15%/15% no-repeat, url(../img/why-we-3.svg) 0% 60%/20% no-repeat,
+        url(../img/why-we-4.svg) 115% -80px/40% no-repeat;
 }
 
 @media (max-width: 768px) {
-	.why-we .references.line::before {
-		content: "";
-		width: 40%;
-		height: 2px;
-		background-color: #3b3b44;
-		display: block;
-		border-radius: 50%;
-		position: relative;
-		left: 30%;
-		right: 30%;
-		margin-bottom: 20px;
-	}
-	.why-we .references .amount {
-		font-size: 74px;
-	}
+    .why-we .references.line::before {
+        content: "";
+        width: 40%;
+        height: 2px;
+        background-color: #3b3b44;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        left: 30%;
+        right: 30%;
+        margin-bottom: 20px;
+    }
+    .why-we .references .amount {
+        font-size: 74px;
+    }
 
-	.why-we .why-we-circles {
-		background: url(../img/why-we-2.svg) -10% 25%/20% no-repeat, 
-		url(../img/why-we-3.svg) 130% 25%/40% no-repeat;
-	}
+    .why-we .why-we-circles {
+        background: url(../img/why-we-2.svg) -10% 25%/20% no-repeat, url(../img/why-we-3.svg) 130% 25%/40% no-repeat;
+    }
 }
 
 @media (min-width: 769px) {
-	.why-we .why-we-circles {
-		background: url(../img/why-we-1.svg) 100% 55%/15% no-repeat,
-		url(../img/why-we-2.svg) 20% 15%/15% no-repeat,
-		url(../img/why-we-3.svg) 0% 60%/20% no-repeat, 
-		url(../img/why-we-4.svg) 115% -25%/40% no-repeat;
-	}
+    .why-we .why-we-circles {
+        background: url(../img/why-we-1.svg) 100% 55%/15% no-repeat, url(../img/why-we-2.svg) 20% 15%/15% no-repeat, url(../img/why-we-3.svg) 0% 60%/20% no-repeat,
+            url(../img/why-we-4.svg) 115% -25%/40% no-repeat;
+    }
 }
 @media (max-width: 991px) {
-	.why-we .background-gradient h2 {
-		font-size: 64px;
-	}
+    .why-we .background-gradient h2 {
+        font-size: 64px;
+    }
 
-	.why-we .references .amount {
-		font-size: 74px;
-	}
+    .why-we .references .amount {
+        font-size: 74px;
+    }
 }
 
 @media (min-width: 1216px) {
-	.why-we .why-we-circles {
-		background: url(../img/why-we-1.svg) 100% 55%/10% no-repeat,
-		url(../img/why-we-2.svg) 20% 20%/10% no-repeat,
-		url(../img/why-we-3.svg) 5% 60%/15% no-repeat,
-		url(../img/why-we-4.svg) 110% -75px/30% no-repeat
-	}
+    .why-we .why-we-circles {
+        background: url(../img/why-we-1.svg) 100% 55%/10% no-repeat, url(../img/why-we-2.svg) 20% 20%/10% no-repeat, url(../img/why-we-3.svg) 5% 60%/15% no-repeat,
+            url(../img/why-we-4.svg) 110% -75px/30% no-repeat;
+    }
 }
 @media (min-width: 1408px) {
-	.why-we .why-we-circles {
-		background: url(../img/why-we-1.svg) 100% 55%/8% no-repeat,
-		url(../img/why-we-2.svg) 20% 20%/8% no-repeat,
-		url(../img/why-we-3.svg) 5% 60%/12% no-repeat,
-		url(../img/why-we-4.svg) 90% -50px/20% no-repeat;
-	}
+    .why-we .why-we-circles {
+        background: url(../img/why-we-1.svg) 100% 55%/8% no-repeat, url(../img/why-we-2.svg) 20% 20%/8% no-repeat, url(../img/why-we-3.svg) 5% 60%/12% no-repeat,
+            url(../img/why-we-4.svg) 90% -50px/20% no-repeat;
+    }
 }
 
 /* --------
@@ -1067,7 +1056,7 @@ footer .columns {
 About Us section styles
 	-------- */
 .video-section {
-	position: relative;
+    position: relative;
 }
 
 .ellipse-1 {
@@ -1153,8 +1142,7 @@ Payments and collections section styles
 }
 
 .features-list-orange li {
-	color:#7a8285;
-
+    color: #7a8285;
 }
 
 .features-list-orange li:before {
@@ -1200,148 +1188,146 @@ Payments and collections section styles
 /* --------
 Electronic billings tyles
 	-------- */
-	.card-icon.card {
-		margin-top: 40px;
-		padding: 40px 20px 0;
-		overflow: visible;
-		border: 1px solid #EEEEEE;
-		box-sizing: border-box;
-		border-radius: 25px;
-	}
-	
-	.card-icon.card.plus-info::after {
-		top: -50px;
-	}
+.card-icon.card {
+    margin-top: 40px;
+    padding: 40px 20px 0;
+    overflow: visible;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
 
-	.card-icon.card::after {
-		content: "";
-		position: absolute;
-		top: -35%;
-		left: 10%;
-		width: 99px;
-		height: 100px;
-		box-shadow: 0px 2px 20px rgba(112, 144, 176, 0.149);
-		border-radius: 25px;
-		background-color: #fff;
-		padding-top: 5px;
-	}
+.card-icon.card.plus-info::after {
+    top: -50px;
+}
 
-	.card-icon.card .card-content {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.card-icon.card .card-content.multiple {
-		flex-direction: row;
-	}
-	.card-icon.card .card-content .title {
-		padding-top: 30px;
-		width: 50%;
-	}
+.card-icon.card::after {
+    content: "";
+    position: absolute;
+    top: -35%;
+    left: 10%;
+    width: 99px;
+    height: 100px;
+    box-shadow: 0px 2px 20px rgba(112, 144, 176, 0.149);
+    border-radius: 25px;
+    background-color: #fff;
+    padding-top: 5px;
+}
 
-	.card-icon.card .card-content .description {
-		width: 50%;
-	}
+.card-icon.card .card-content {
+    display: flex;
+    flex-direction: column;
+}
 
-	.card-icon.card.people-outline-pink::after {
-		background: #fff url(../img/icons/people-outline-3.png) 50%/70% no-repeat;
-	}
-	
-	.card-icon.card.calendar-outline-pink::after {
-		background: #fff url(../img/icons/calendar-outline-3.png) 50%/70% no-repeat;
-	}
-	
-	.card-icon.card.credit-card-outline::after {
-		background: #fff url(../img/icons/credit-card-outline-3.png) 50%/70% no-repeat;
-	}
-	
-	.card-icon.card.code-outline::after {
-		background: #fff url(../img/icons/code-outline-3.png) 50%/70% no-repeat;
-	}
+.card-icon.card .card-content.multiple {
+    flex-direction: row;
+}
+.card-icon.card .card-content .title {
+    padding-top: 30px;
+    width: 50%;
+}
 
-	.card-icon.card.people-outline::after {
-		background: #fff url(../img/icons/people-outline.svg) 50%/70% no-repeat;
-	}
+.card-icon.card .card-content .description {
+    width: 50%;
+}
 
-	.card-icon.card.pencil-outline::after {
-		background: #fff url(../img/icons/pencil-outline.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.people-outline-pink::after {
+    background: #fff url(../img/icons/people-outline-3.png) 50%/70% no-repeat;
+}
 
-	.card-icon.card.award-outline::after {
-		background: #fff url(../img/icons/pencil-outline.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.calendar-outline-pink::after {
+    background: #fff url(../img/icons/calendar-outline-3.png) 50%/70% no-repeat;
+}
 
-	.card-icon.card.archive-outline::after {
-		background: #fff url(../img/icons/archive-outline.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.credit-card-outline::after {
+    background: #fff url(../img/icons/credit-card-outline-3.png) 50%/70% no-repeat;
+}
 
-    .card-icon.card.copy-blue::after {
-		background: #fff url(../img/icons/copy-blue.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.code-outline::after {
+    background: #fff url(../img/icons/code-outline-3.png) 50%/70% no-repeat;
+}
 
-	.card-icon.card.archive-blue::after {
-		background: #fff url(../img/icons/archive-blue.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.people-outline::after {
+    background: #fff url(../img/icons/people-outline.svg) 50%/70% no-repeat;
+}
 
-	.card-icon.card.edit-blue::after {
-		background: #fff url(../img/icons/edit-blue.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.pencil-outline::after {
+    background: #fff url(../img/icons/pencil-outline.svg) 50%/70% no-repeat;
+}
 
-    .card-icon.card.smiling-orange::after {
-		background: #fff url(../img/icons/smiling-orange.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.award-outline::after {
+    background: #fff url(../img/icons/pencil-outline.svg) 50%/70% no-repeat;
+}
 
-    .card-icon.card.check-orange::after {
-		background: #fff url(../img/icons/check-orange.svg) 50%/70% no-repeat;
-	}
+.card-icon.card.archive-outline::after {
+    background: #fff url(../img/icons/archive-outline.svg) 50%/70% no-repeat;
+}
 
-    .card-icon.card.copy-orange::after {
-		background: #fff url(../img/icons/copy-orange.svg) 50%/70% no-repeat;
-	}
-	
-	/* --------
+.card-icon.card.copy-blue::after {
+    background: #fff url(../img/icons/copy-blue.svg) 50%/70% no-repeat;
+}
+
+.card-icon.card.archive-blue::after {
+    background: #fff url(../img/icons/archive-blue.svg) 50%/70% no-repeat;
+}
+
+.card-icon.card.edit-blue::after {
+    background: #fff url(../img/icons/edit-blue.svg) 50%/70% no-repeat;
+}
+
+.card-icon.card.smiling-orange::after {
+    background: #fff url(../img/icons/smiling-orange.svg) 50%/70% no-repeat;
+}
+
+.card-icon.card.check-orange::after {
+    background: #fff url(../img/icons/check-orange.svg) 50%/70% no-repeat;
+}
+
+.card-icon.card.copy-orange::after {
+    background: #fff url(../img/icons/copy-orange.svg) 50%/70% no-repeat;
+}
+
+/* --------
 Digital bank section styles
 	-------- */
 .digital-bank {
-	position: relative;
+    position: relative;
 }
 
 .digital-bank .screen {
-	height: 250px;
+    height: 250px;
 }
 
 .add-block {
-	height: 300px;
-	display: block;
+    height: 300px;
+    display: block;
 }
 
 .digital-bank .screen::after {
-	content: "";
-	background: url("../img/digital-bank/screen.png") center no-repeat;
-	position: absolute;
-	height: 550px;
-	display: block;
-	z-index: 999;
-	top: 200px;
-	width: 100%;
+    content: "";
+    background: url("../img/digital-bank/screen.png") center no-repeat;
+    position: absolute;
+    height: 550px;
+    display: block;
+    z-index: 999;
+    top: 200px;
+    width: 100%;
 }
 
 .digital-bank.hero-division {
     border-bottom: 30px solid #bd67bf;
 }
 
-.bank-img{
+.bank-img {
     height: 70px;
 }
 
-.card-cotainer{
+.card-cotainer {
     background-color: #fff;
     border-radius: 15px 15px 15px 15px;
     padding: 25px;
     box-shadow: 0px 0px 20px #eee;
 }
-
-
 
 /*
 Menu
@@ -1395,4 +1381,3 @@ a:hover {
     background-color:  #ccd6dd;
 }
 */
-
